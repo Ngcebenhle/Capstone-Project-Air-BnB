@@ -1,10 +1,11 @@
 import './App.css';
-import Card from './Componets/Card/Card';
+import Listing from './Pages/Listing/Listing';
+
 
 function App() {
   return (
     <div className="App">
-      <Card/>
+      <Listing/>
     </div>
   );
 }
