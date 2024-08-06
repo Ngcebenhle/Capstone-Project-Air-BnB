@@ -33,6 +33,28 @@
     border-top: 1px solid gray;
  
 }
+.copywritelinks > span {
+  
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+}
+.tabs > span {
+   
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    
+}
+span a {
+    text-decoration: none;
+    color: black;
+}
 
 .suportlinks, .communitylinks,
 .hostinglinks, .aboutlinks{
@@ -43,6 +65,7 @@
     margin: 8px 0px 8px 0px;
     text-decoration: none;
     color: black;
+    
 }
 
 .communitylinks > a {
@@ -60,3 +83,4 @@
     text-decoration: none;
     color: black;
 }
+
