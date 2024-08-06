@@ -921,8 +921,145 @@ const Listing = () => {
          </div>
 
          <div className="explore">
+
             <h4>Explore Options here</h4>
-            {/*  look up the css/bootstrap grid system */}
+
+           <div className="options">
+
+            <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                <div className="option">
+                    <p>Amiens</p>
+                </div>
+
+            </div>
+
+             <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                <div className="option">
+                    <p>Amiens</p>
+                </div>
+
+            </div>
+
+            <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                <div className="option">
+                    <p>Amiens</p>
+                </div>
+
+            </div>
+
+             <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                <div className="option">
+                    <p>Amiens</p>
+                </div>
+
+            </div>
+
+           </div>
+
+           <h5>Unique stays in AirBnB</h5>
+
+           <div className="options">
+
+            <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+              
+
+            </div>
+
+             <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                
+            </div>
+
+            <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+               
+
+            </div>
+
+             <div className="optionList">
+
+                <div className="option">
+                    <p>Paris</p>
+                </div>
+
+                <div className="option">
+                    <p>Dijon</p>
+                </div>
+
+                
+
+            </div>
+
+           </div>
+
+           <div className="links">
+            <span>Airbnb .</span>
+            <span>Europe .</span>
+            <span>France .</span>
+            <span>Bordeaux .</span>
+          </div>
+
          </div>
 
          <div className="footer">
