@@ -1,9 +1,10 @@
 import './App.css';
+import CreateListingForm from './Components/CreateListingForm/CreateListingForm';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <CreateListingForm/>
     </div>
   );
 }
