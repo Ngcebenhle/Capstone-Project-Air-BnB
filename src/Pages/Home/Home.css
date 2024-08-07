@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(17, 16, 16);
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 70px;
+    padding: 0px 40px;
+
+    background-color: gray;
+
+}
+.userProfile{
+    display: flex;
+    justify-content: end;
+}
+.locationFilter{
+    display: flex;
+    width: 100%;
+    max-height: 64px;
+
+    justify-content: center;
+}
+.banner{
+ width: 100%;
+ height: 100vh;
+ position: relative;
+}
+.bannerText{
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerText > button {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(201, 64, 64);
+    border: none;
+    border-radius: 30px;
+}
+.extraContent{
+    width: 100%;
+    height: 3096px;
+    padding: 50px 70px;
+
+    background-color: grey;
+}
+/* Inspiratio section */
+.inspiration{
+    width: 100%;
+    height: 536px;
+    /* max-height: 536px; */
+
+    background-color: green;
+    margin-bottom: 50px;
+}
+/* Discover Section */
+.discover{
+    width: 100%;
+    max-height: 720px;
+}
+.banners{
+    display: flex;
+    justify-content: space-evenly;
+}
+.banners > div {
+    width: 100%;
+    height: 100%;
+}
+.photo1, .photo2 {
+    position: relative;
+}
+.banners > div {
+    margin: 0px 10px 0px 10px;
+}
+
+.photo1 > img {
+    width: 100%;
+    max-height: 720px;
+    border-radius: 17px;
+}
+.photo2 > img {
+    width: 100%;
+    max-height: 720px;
+    border-radius: 17px;
+}
+.photo1Text, .photo2Text {
+    position: absolute;
+    top: 0px;
+}
+
+/* Shop  */
+.shop{
+    width: 100%;
+    max-height: 320px;
+    display: flex;
+    margin-top: 100px;
+
+    background-color: greenyellow;
+}
+.shopText{
+    height: 100%;
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+}
+.shopImage{
+    width: 100%;
+    max-height: 320px;
+}
+.shopImage > img {
+    width: 100%;
+    height: 100%;
+}
+/* Questions section */
+.questionsBanner{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    height: 640px;
+
+    background-color: red;
+}
+.questionsText{
+    position: absolute;
+    top: 0px;
+}
+
+/* Inspiration For Future getaway */
+.inspirationForFuture{
+    margin-top: 50px;
+    width: 100%;
+    max-height: 304px;
+}
+.links{
+
+}
+.suggestions{
+    width: 100%;
+    display: flex;
+}
+.suggestions > div {
+    width: 25%;
+}
