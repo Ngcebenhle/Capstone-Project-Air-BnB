@@ -1,14 +1,43 @@
 import React from 'react'
 import './Listing.css'
+import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
+import {ReactComponent as Logo} from '../../Assest/Logo_Red.svg'
+import {ReactComponent as Dot} from '../../Assest/Dot.svg'
+import {ReactComponent as Save} from '../../Assest/Save.svg'
+import {ReactComponent as Share} from '../../Assest/Share.svg'
+import {ReactComponent as Ring} from '../../Assest/Red_Ring_Superhost_Icon.svg'
+import {ReactComponent as Star} from '../../Assest/Red_Start_icon.svg'
+import {ReactComponent as Try} from '../../Assest/Try_this.svg'
+import {ReactComponent as TryRight} from '../../Assest/Try_this_Right.svg'
+import {ReactComponent as Badge} from '../../Assest/Airbnb_superhost_Badge.svg'
+import {ReactComponent as Home} from '../../Assest/Home.svg'
+import {ReactComponent as StarCleaning} from '../../Assest/Star_Cleaning_Icon.svg'
+import {ReactComponent as SelfCheck} from '../../Assest/Self_Check_In.svg'
+import {ReactComponent as Cancellation} from '../../Assest/Cancellation.svg'
+import {ReactComponent as Reserve} from '../../Assest/Reserve_Section_icons.svg'
+import {ReactComponent as Leaf} from '../../Assest/Leaf.svg'
+
+import {ReactComponent as Washer} from '../../Assest/Washer.svg'
+import {ReactComponent as Camera} from '../../Assest/Camera.svg'
+import {ReactComponent as Kitchen} from '../../Assest/Kitchine.svg'
+import {ReactComponent as Wifi} from '../../Assest/Wifi.svg'
+import {ReactComponent as Fridge} from '../../Assest/Refrigiration.svg'
+import {ReactComponent as Dryer} from '../../Assest/Dryer.svg'
+import {ReactComponent as AirCooling} from '../../Assest/Air_Cooling.svg'
+import {ReactComponent as Pets} from '../../Assest/Pets.svg'
+import {ReactComponent as Bicycle} from '../../Assest/Bycicle.svg'
+
 
 const Listing = () => {
   return (
     <div className='listingContainer'>
 
         <div className="nav">
-             <div className="log">
-                <img src="" alt="" />
+
+             <div className="logo">
+               <Logo/>
              </div>
+
              <div className="search">
                 {/* Search input */}
                 <input type="text" name="" id="" />
@@ -18,10 +47,14 @@ const Listing = () => {
                  </i>
                 </span>
              </div>
-             <div className="userProfile">
-                {/*  User Section Componet */}
+             
+             <div className="navUserProfile">
+                <NavUserTab/>
+                
              </div>
         </div>
+          
+          <hr />
 
          <div className="miniListingInfo">
 
@@ -30,28 +63,34 @@ const Listing = () => {
             <div className="subMiniInfoBar">
 
                  <div className="miniInfo">
-                    <span>Rating </span>
-                    <span>Review </span>
-                    <span>Super host </span>
+                      <Try/>
+                    {/* <span className='star'><Star/></span>
+                    <span className='dot'><Dot/></span>
+                    <span>7 review </span>
+                    <span className='dot'><Dot/></span>
+                    <span><Ring/></span>
+                    <span>superhost </span>
+                    <span className='dot'><Dot/></span>
+                    <span>Location</span> */}
                  </div>
 
                  <div className="interaction">
-
+                      <TryRight/>
                     {/* two icons Share and Save */}
 
-                    <span>
+                    {/* <span>
                         <i>
-                          {/* Share icon */}
+                         <Share/>
                         </i>
                         Share
                     </span>
 
                     <span>
                         <i>
-                          {/* Save icon */}
+                         <Save/>
                         </i>
                         Save
-                    </span>
+                    </span> */}
                  </div>
             </div>
          </div>
@@ -63,7 +102,7 @@ const Listing = () => {
                 <div className="mainImage">
 
                     <img className='mainImageBanner' 
-                    src="" alt="" 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykx-eqg-tuN-WD7VArOCZM4ynUQ2SgxlfIw&s" alt="" 
                     />
 
                 </div>
@@ -76,7 +115,7 @@ const Listing = () => {
                        
                         {/* 1 */}
                         <img className='smallerImage' 
-                        src="" alt="" />
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykx-eqg-tuN-WD7VArOCZM4ynUQ2SgxlfIw&s" alt="" />
 
                     </div>   
 
@@ -84,7 +123,7 @@ const Listing = () => {
                         
                          {/* 2 */}
                         <img className='smallerImage' 
-                        src="" alt="" />
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykx-eqg-tuN-WD7VArOCZM4ynUQ2SgxlfIw&s" alt="" />
                 
                     </div>
 
@@ -92,7 +131,7 @@ const Listing = () => {
                         
                           {/* 3 */} 
                         <img className='smallerImage' 
-                        src="" alt="" />
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykx-eqg-tuN-WD7VArOCZM4ynUQ2SgxlfIw&s" alt="" />
                        
                     </div> 
 
@@ -100,7 +139,7 @@ const Listing = () => {
                        
                          {/* 4 */}
                          <img className='smallerImage' 
-                        src="" alt="" />
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQykx-eqg-tuN-WD7VArOCZM4ynUQ2SgxlfIw&s" alt="" />
 
                     </div>
 
@@ -117,22 +156,24 @@ const Listing = () => {
                        <div className="listingName">
 
                           <div className="name">
-                            <h3>Name . Location</h3>
+                            <h3>Entire rental unit hosted by Ghazal</h3>
                             <span>2 Geusts .</span>
-                            <span>2 bedrooms .</span>
-                            <span>2 baths .</span>
-                            <span>2 beds .</span>
+                            <Dot/>
+                            <span>2 bedrooms  <Dot/></span>
+                            <span>2 baths  <Dot/></span>
+                            <span>2 beds  <Dot/></span>
                           </div>
 
                           <div className="hostPhoto">
 
                             {/* Round Photo */}
-                            <img src="" alt="" />
+                            <img src="https://newprofilepic.photo-cdn.net//assets/images/article/profile.jpg?90af0c8" 
+                            alt="" />
 
                             <div className="hostTagIcon">
                                 <span>
                                     <i>
-                                        {/* Host Tag overlayed on the profile photo */}
+                                       <Badge/>
                                     </i>
                                 </span>
                             </div>
@@ -142,6 +183,7 @@ const Listing = () => {
 
                      <hr />
                        {/* This added on/ offered in the listing  */}
+
                        <div className="amendeties">
 
                           <div className="accomodationTypeDescription">
@@ -149,7 +191,7 @@ const Listing = () => {
                             <div className="descriptiveIcon">
                                 <span>
                                     <i>
-                                        {/* Home Icon */}
+                                     <Home/>
                                     </i>
                                 </span>
                             </div>
@@ -166,7 +208,7 @@ const Listing = () => {
                             <div className="descriptiveIcon">
                                 <span>
                                     <i>
-                                        {/* Cleaning Icon */}
+                                        <StarCleaning/>
                                     </i>
                                 </span>
                             </div>
@@ -183,14 +225,14 @@ const Listing = () => {
                             <div className="descriptiveIcon">
                                 <span>
                                     <i>
-                                        {/* Home Icon */}
+                                       <SelfCheck/>
                                     </i>
                                 </span>
                             </div>
 
                             <div className="accomodationType">
-                                <h4>Accomodation Type</h4>
-                                <span>Small Description</span>
+                                <h4>Self Check In</h4>
+                                <span>Check yourself in with Keypad</span>
                             </div>
 
                           </div>
@@ -200,14 +242,14 @@ const Listing = () => {
                             <div className="descriptiveIcon">
                                 <span>
                                     <i>
-                                        {/* Cleaning Icon */}
+                                       <Cancellation/>
                                     </i>
                                 </span>
                             </div>
 
                             <div className="cleaningType">
-                                <h4>Enhenced Cleaning</h4>
-                                <span>Small Description of whats being done ... <a href="">Show more</a></span>
+                                <h4>Free Cancellation Before Feb 14</h4>
+                                <span>Free, no extra charges</span>
                             </div>
 
                           </div>
@@ -224,9 +266,9 @@ const Listing = () => {
                             praesentium architecto earum maxime officiis? 
                             Dignissimos ipsam expedita nam.
                         </p>
-                        <span>...</span>
+                        <span>...</span><br />
 
-                         <a href="">Show More</a>
+                        <br /> <a href="">Show More</a>
 
                        </div>
 
@@ -241,13 +283,14 @@ const Listing = () => {
                             <div className="priceAndReview">
 
                                 <div className="price">
-                                    <span>price </span>
+                                    <span className='dollarAmount'>price </span>
                                     <span>/night</span>
                                 </div>
 
                                 <div className="ratingAndReview">
-                                    <span>rating</span>
-                                    <span>Review</span>
+                                    <Reserve/>
+                                    {/* <span>rating</span>
+                                    <span>Review</span> */}
                                 </div>
 
                             </div>
@@ -255,8 +298,12 @@ const Listing = () => {
                             <div className="datesAndGusts">
 
                                 <div className="chooseDates">
-                                    <div className="checkingInDate"></div>
-                                    <div className="checkingOutDate"></div>
+                                    <div className="checkingInDate">
+                                        its me
+                                    </div>
+                                    <div className="checkingOutDate">its 
+                                        me here
+                                    </div>
                                 </div>
 
                                 <div className="geusts">
@@ -366,6 +413,7 @@ const Listing = () => {
                <div className="extra">
 
                 <div className="bedroomShowcase">
+
                     <h3>Where you'll Sleep</h3>
 
                     <div className="bedroomPhotos">
@@ -374,7 +422,7 @@ const Listing = () => {
                     </div>
 
                     <div className="bedroomDetails">
-                        <h4>2 Bedrooms</h4>
+                         <h4>2 Bedrooms</h4>
                          <span>2 Beds Each</span>
                     </div>
 
@@ -394,13 +442,15 @@ const Listing = () => {
                            <div className="offerIcon">
                                 <span>
                                     <i>
-                                        {/* Offer icon */}
+                                      <Leaf/>
                                     </i>
                                 </span>
                             </div>
+
                             <div className="offerName">
-                                <h5>Wi-Fi</h5>
+                                <h5>Garden View</h5>
                             </div>
+
                            </div>
 
                            <div className="offer">
@@ -408,41 +458,15 @@ const Listing = () => {
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                       <Wifi/>
                                       </i>
                                   </span>
                               </div>
+  
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Wifi</h5>
                               </div>
-                            </div>
-
-                            <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
-                            </div>
-
-                            <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
+  
                              </div>
 
                              <div className="offer">
@@ -450,32 +474,69 @@ const Listing = () => {
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                        <Washer/>
                                       </i>
                                   </span>
                               </div>
+  
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Free washer - in building</h5>
                               </div>
+  
                              </div>
+
+                             <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                    <AirCooling/>
+                                      </i>
+                                  </span>
+                              </div>
+  
+                              <div className="offerName">
+                                  <h5>Central air conditioning</h5>
+                              </div>
+  
+                             </div>
+
+                             <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                        <Fridge/>
+                                      </i>
+                                  </span>
+                              </div>
+  
+                              <div className="offerName">
+                                  <h5>Refrigerator</h5>
+                              </div>
+  
+                             </div>
+
 
                         </div>
 
 
-                        <div className="offerList">
+                       <div className="offerList">
 
                            <div className="offer">
                              
                            <div className="offerIcon">
                                 <span>
                                     <i>
-                                        {/* Offer icon */}
+                                     <Kitchen/>
                                     </i>
                                 </span>
                             </div>
+
                             <div className="offerName">
-                                <h5>Wi-Fi</h5>
+                                <h5>Kitchen</h5>
                             </div>
+
                            </div>
 
                            <div className="offer">
@@ -483,41 +544,15 @@ const Listing = () => {
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                        <Pets/>
                                       </i>
                                   </span>
                               </div>
+  
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Pets allowed</h5>
                               </div>
-                            </div>
-
-                            <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
-                            </div>
-
-                            <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
+  
                              </div>
 
                              <div className="offer">
@@ -525,14 +560,49 @@ const Listing = () => {
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                        <Dryer/>
                                       </i>
                                   </span>
                               </div>
+  
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Dryer</h5>
                               </div>
+  
                              </div>
+
+                             <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                       <Camera/>
+                                      </i>
+                                  </span>
+                              </div>
+  
+                              <div className="offerName">
+                                  <h5>Security cameras on property</h5>
+                              </div>
+  
+                             </div>
+
+                             <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                        <Bicycle/>
+                                      </i>
+                                  </span>
+                              </div>
+  
+                              <div className="offerName">
+                                  <h5>Bicycles</h5>
+                              </div>
+  
+                             </div>
+
 
                         </div>
                         

@@ -41,10 +41,10 @@ const NavUserTab = () => {
 
            </div>
         
-           <div className="menuItems">
+           {/* <div className="menuItems">
                  <button>Log In</button>
                  <button>Reservations</button>
-           </div>
+           </div> */}
 
         </div>
 
