@@ -1,5 +1,6 @@
 import React from 'react'
 import './Listing.css'
+import Footer from '../../Components/Footer/Footer.jsx';
 import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
 import {ReactComponent as Logo} from '../../Assest/Logo_Red.svg'
 import {ReactComponent as Dot} from '../../Assest/Dot.svg'
@@ -1293,7 +1294,7 @@ const Listing = () => {
          </div>
 
          <div className="footer">
-            {/* Add Footer Componet */}
+           <Footer/>
          </div>
 
     </div>
