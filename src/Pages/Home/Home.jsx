@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
+import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
+import Card from '../../Componets/Card/Card'
 
 
 const Home = () => {
@@ -9,19 +11,19 @@ const Home = () => {
 
        <div className="nav">
 
-        <div className="logo">
-            <LogoWhite/>
-        </div>
+            <div className="logo">
+                <LogoWhite/>
+            </div>
 
-        <div className="navLinks">
-             <span>Places to Stay</span>
-             <span>Experiences</span>
-             <span>Online Experiences</span>
-        </div>
+            <div className="navLinks">
+                <span>Places to Stay</span>
+                <span>Experiences</span>
+                <span>Online Experiences</span>
+            </div>
 
-        <div className="userProfile">
-            
-        </div>
+            <div className="NavUserProfile">
+                <NavUserTab/>
+            </div>
 
        </div>
 
@@ -37,8 +39,10 @@ const Home = () => {
          alt="" />
          
          <div className="bannerText">
+            <div className="bannerTextContent">
             <h1>Not Sure Where to Go? Perfect</h1>
             <button>i'm flexible</button>
+            </div>
          </div>
 
        </div>
@@ -48,7 +52,12 @@ const Home = () => {
            <div className="inspiration">
             <h2>Inspiration for your next trip</h2>
             <div className="inspirationCards">
-             {/* Home Card Component here */}
+             
+                 <Card/>
+                 <Card/>
+                 <Card/>
+                 <Card/>
+
             </div>
            </div>
 
@@ -62,7 +71,7 @@ const Home = () => {
                     alt="" />
                     <div className="photo1Text">
                         <h1>Things to do on your trip</h1>
-                        <button></button>
+                        <button>Experiences</button>
                     </div>
                 </div>
 
@@ -71,23 +80,29 @@ const Home = () => {
                     alt="" />
                     <div className="photo2Text">
                         <h1>Things to do at home</h1>
-                        <button></button>
+                        <button>Online Experience</button>
                     </div>
                 </div>
+
              </div>
            </div>
 
            <div className="shop">
 
             <div className="shopText">
-                <h1>Shop Airbnb Gift Cards</h1>
-                <button>Learn More</button>
+               <div className="shopTextContent">
+               <h1>Shop Airbnb
+                gift cards</h1>
+               <button>Learn More</button>
+               </div>
             </div>
 
             <div className="shopImage">
                 <img src="https://ml5u6r2vr7de.i.optimole.com/cb:aeZg.3180f/w:1600/h:1025/q:mauto/f:avif/https://fantasticostudio.co/wp-content/uploads/2022/09/airbnb_laura_niubo_giftcards.png" 
                 alt="" />
             </div>
+
+            
            </div>
 
            <div className="questionsBanner">
@@ -95,22 +110,22 @@ const Home = () => {
             alt="" />
 
             <div className="questionsText">
-                <h1>Question About Hosting</h1>
+                <h1>Questions about hosting?</h1>
                 <button>Ask a Question</button>
             </div>
            </div>
            
            <div className="inspirationForFuture">
 
-                <h2>Inspiration For your Future Getaways</h2>
+                <h2>Inspiration for future getaways</h2>
 
                 <div className="links">
-                    <span>link1</span>
-                    <span>link2</span>
-                    <span>link3</span>
-                    <span>link4</span>
-                    <span>link5</span>
-                    <span>link6</span>
+                    <span>Destinations for arts & culture</span>
+                    <span>Destinations for outdoor adventure</span>
+                    <span>Mountain cabins</span>
+                    <span>Beach destinations</span>
+                    <span>Popular destinations</span>
+                    <span>Unique Stays</span>
                 </div>
 
                 <div className="suggestions">
@@ -179,8 +194,7 @@ const Home = () => {
                     </div>
 
                     <div className="sugestedlocations">
-                        <h2>France</h2>
-                        <span>italy</span>
+                        <a href="">Show More</a>
                     </div>
 
                 </div>
