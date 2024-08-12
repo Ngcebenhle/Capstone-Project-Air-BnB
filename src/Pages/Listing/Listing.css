@@ -5,13 +5,14 @@
 
 .listingContainer{
     padding: 0px 12px 0px 12px;
+    height: 100%;
 }
 
 /* Nav styling */
 .nav {
   width: 100%;
   min-height: 60px;
-  
+  padding: 0px 95px;
 
   display: flex;
   align-items: center;
@@ -68,14 +69,10 @@
   line-height: 20px;
   text-align: left;
 
-
-  
 }
 .interaction{
-    margin-right: 20px;
+    margin-right: 49px;
 }
-
-
 
 
 /* Third Section Styling */
@@ -86,14 +83,15 @@
     display: flex;
     width: 100%;
     max-height: 500px;
+    
 }
 .mainImage{
     /* max-width: 700px;
     max-height: 500px; */
 }
 .mainImageBanner{
- width: 800px;
- height: 100%;
+ width: 750px;
+ height: 99%;
  border-radius: 25px;
  padding: 3px;
  margin-right: 10px;
@@ -114,21 +112,20 @@
 }
 .subImage{
  margin-right: 5px;
- 
 }
 .smallerImage{
-  width: 260px;
-  height: 210px;
+  width: 200px;
+  height: 188px;
   border-radius: 15px;
 }
 
 /* Extensive Listing Details  */
 .ListingDetails{
-    
+   
 }
 .details{
     
-    padding-right: 35px;
+    padding-right: 50px;
     display: flex;
     justify-content: space-between;
     margin: 25px 0px;
@@ -141,14 +138,12 @@
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.name > h3 {
-   
+.name > h3 { 
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
-    text-align: left;
-    
+    text-align: left;  
 }
 .name > span {
   
@@ -187,21 +182,17 @@ left: 30px;
 .accomodationTypeDescription{
  display: flex;
  align-items: end;
-
 }
 .descriptiveIcon{
     margin-right: 10px;
 }
-.accomodationType > h4{
-  
+.accomodationType > h4{  
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 5px;
     text-align: left;
     color: rgba(0, 0, 0, 1);
-
-
 }
 .accomodationType > span{
   
@@ -211,21 +202,16 @@ left: 30px;
     /* line-height: 5px; */
     text-align: left;
     color: rgba(107, 114, 128, 1);
-
-    
-
-
 }
 
 .cleaningDescription{
     display: flex;
-    align-items: end;
-   
-   }
-   .descriptiveIcon{
+    align-items: end;  
+}
+.descriptiveIcon{
        margin-right: 10px;
-   }
-   .cleaningType > h4{
+}
+.cleaningType > h4{
      
        font-family: Inter;
        font-size: 16px;
@@ -233,10 +219,9 @@ left: 30px;
        line-height: 5px;
        text-align: left;
        color: rgba(0, 0, 0, 1);
-   
-   
-   }
-   .cleaningType > span{
+
+}
+.cleaningType > span{
      
        font-family: Inter;
        font-size: 14px;
@@ -244,13 +229,9 @@ left: 30px;
        /* line-height: 5px; */
        text-align: left;
        color: rgba(107, 114, 128, 1);
+ 
+}
    
-       
-   
-   
-   }
-   
-
  .listingTextDescription{
     margin: 20px 0px;
  }  
@@ -274,13 +255,12 @@ left: 30px;
     height: 470px;
     border: 1px solid gray;
     border-radius: 14px;
-
     box-shadow: 10px 10px 5px rgb(86, 89, 90);
 }
 .priceAndReview{
     display: flex;
     justify-content: space-between;
-   margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 .dollarAmount{
    
@@ -375,7 +355,7 @@ left: 30px;
  Section  */
 
 .extra{
-    max-width: 80%;
+    max-width: 50%;
 }
 .bedroomShowcase{
     margin: 15px 0px;
@@ -419,6 +399,8 @@ text-align: left;
     border-radius: 12px;
 }
 
+
+
 /* What This Place Offers Section */
 .offersAvailable{
     margin: 15px 0px;
@@ -430,7 +412,8 @@ text-align: left;
     display: flex;
 }
 .offerList{
-    margin: 0px 10px 0px 10px;
+    margin-right: 20px;
+    width: 300px;
 }
 .offer{
     display: flex;
@@ -458,26 +441,136 @@ text-align: left;
     border: 1px solid gray;
     border-radius: 10px;
     background: transparent;
+    margin: 15px 0px;
 }
+
+
 
 /* Dates and calender display here */
 .reviews{
     width: 100%;
+    padding: 0px 95px;
+    margin: 20px 0px;
+    
 }
 .slideGraphs{
     display: flex;
+    width: 100%;
+    margin: 15px 0px;
+  
+    
+}
+.graphlist{
+    
+    max-width: 520px;
+    max-height: 104px;
+    margin-right: 130px;
+    width: 50%;
 }
 .graph{
     display: flex;
     justify-content: space-between;
+    margin: 10px 0px;
+   
+}
+.graph > h6 {
+   
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
 }
 
 /* Reviers/ Comments Section */
 .reviewComments{
     display: flex;
+    width: 100%;
+   
+}
+.commentsList{
+    width: 100%;
+    height: 100%;
+   
 }
 .user{
     display: flex;
+    margin-bottom: 15px;  
+}
+.userPhoto{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 20px;
+}
+.userPhoto > img{
+    /* max-width: 40px;
+    max-height: 40px; */
+    width: 100%;
+    height: 100%;
+     border: none;
+     border-radius: 100%; 
+}
+.userDetails{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.userDetails > h3{
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 10px;
+    text-align: left;
+
+}
+.userDetails > span{
+   
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(107, 114, 128, 1);
+
+
+}
+.commentedText > p {
+   
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+
+}
+.comments{
+    margin: 12px 0px 12px 0px;
+    max-width: 520px;
+    max-height: 180px;
+    
+}
+.reviewButton > button{
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: transparent;
+    margin: 20px 0px;
+}
+
+
+
+/* Hosted By Section */
+.hostDetails{
+    padding: 0px 95px;
+    margin-top: 20px;
+}
+
+.hostedByUser{
+    display: flex;
+    margin: 10px 0px;
 }
 .userPhoto{
     max-width: 40px;
@@ -486,56 +579,191 @@ text-align: left;
 .userPhoto > img {
     width: 100%;
     height: 100%;
-    border-radius: 100%;
+     border: none;
+     border-radius: 100%; 
 }
-.comments{
-    margin: 12px 0px 12px 0px;
-}
-.user{
-    margin-bottom: 12px;
-}
-.reviewButton > button{
-    width: 150px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    background: transparent;
-}
+.userDetails > h3{
 
-/* Hosted By Section */
-.hostedByUser{
-    display: flex;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+}
+.userDetails > span{
+
+    
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(107, 114, 128, 1);
+
+
+
+}
+.userDescriptiveDetails{
+    margin-top: 20px;
 }
 .userDescriptiveDetails > h4{
     margin-top: 12px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
    }
 .userDescriptiveDetails > p{
- margin: 12px 0px 12px 0px;
+    margin: 12px 0px 12px 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(107, 114, 128, 1);
+
+
 }
 .contactUserButton > button{
 width: 180px;
-height: 70px;
+height: 65px;
 background: transparent;
 border-radius: 12px;
 border: 1px solid  gray;
+margin: 12px 0px;
 /* font-weight: bold; */
 
 }
+.extraText{
+    display: flex;
+    max-width: 200px;
+}
+.extraText > div {
+    margin: 10px 5px;
+}
+.text{
+    
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: rgba(107, 114, 128, 1);
+
+
+}
+
+
 
 /* Things To Know Section */
 .thingsToKnow{
     width: 100%;
+    padding: 0px 95px;
+    min-height: 324px;
+}
+.thingsToKnow > h1{
+   
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+
 }
 .thingsToKnowInfo{
     display: flex;
 }
-.thingsToKnowInfo > div {
+.thingsToKnowInfo > div{
+    height: 100%;
+    max-width: 320px;
     margin: 5px;
+    margin-right: 12px;
 }
+
+.houseRules{
+  width: 100%;
+  height: 100%;
+}
+.houseRules > h3 {
+   
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+    
+}
+.healthAndSafety{
+    width: 100%;
+    height: 100%;
+}
+.healthAndSafety > h3 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.cancellation{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.cancellation > h3 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.cancellation > span {
+    
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(75, 85, 99, 1);
+
+    
+}
+
 
 /* Explore Other Section */
 .explore{
     width: 100%;
+    padding: 0px 95px;
+    background-color: rgb(249, 250, 251);
+
+}
+.explore > h4 {
+    
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+
+}
+.explore > h5 {
+    
+    
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+
 
 }
 .options{
@@ -549,3 +777,33 @@ border: 1px solid  gray;
 .option{
     margin: 15px 0px 10px 0px;
 }
+.option > p {
+   
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(75, 85, 99, 1);
+
+
+}
+
+.links > span{
+    
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+
+    width: 44px;
+    height: 20px;
+
+}
+
+.footer{
+    padding: 0px 95px;
+    background-color: rgb(249, 250, 251);
+}
+

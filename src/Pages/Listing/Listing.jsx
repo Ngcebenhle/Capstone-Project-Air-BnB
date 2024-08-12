@@ -26,6 +26,23 @@ import {ReactComponent as Dryer} from '../../Assest/Dryer.svg'
 import {ReactComponent as AirCooling} from '../../Assest/Air_Cooling.svg'
 import {ReactComponent as Pets} from '../../Assest/Pets.svg'
 import {ReactComponent as Bicycle} from '../../Assest/Bycicle.svg'
+import {ReactComponent as Slider} from '../../Assest/Slider_Graph.svg'
+import {ReactComponent as HostedBy} from '../../Assest/Hosted_By.svg'
+import {ReactComponent as Warning} from '../../Assest/Payment_Warning.svg'
+import {ReactComponent as Clock} from '../../Assest/Clock.svg'
+import {ReactComponent as Party} from '../../Assest/Parity.svg'
+import {ReactComponent as SmallPet} from '../../Assest/Small_Pets.svg'
+import {ReactComponent as NoSmoking} from '../../Assest/Small_No_Smoking.svg'
+import {ReactComponent as Cart} from '../../Assest/Small_Cart.svg'
+import {ReactComponent as SmallSelfCheck} from '../../Assest/Small_Self_Check.svg'
+import {ReactComponent as ThreeStars} from '../../Assest/Small_Three_Stars.svg'
+import {ReactComponent as SprayCan} from '../../Assest/Small_Spray_Can.svg'
+import {ReactComponent as AirCoolingSystem} from '../../Assest/Small_Air_Cooling.svg'
+import {ReactComponent as SmokeAlarm} from '../../Assest/Smoke_Alarm.svg'
+import {ReactComponent as SecurityDeposite} from '../../Assest/Security_Deposite.svg'
+
+
+
 
 
 const Listing = () => {
@@ -52,10 +69,10 @@ const Listing = () => {
                 <NavUserTab/>
                 
              </div>
+
+             
         </div>
           
-          <hr />
-
          <div className="miniListingInfo">
 
             <h3>Name / Location</h3>
@@ -631,79 +648,73 @@ const Listing = () => {
          </div>
 
          <div className="reviews">
-                <h5>Reviews here</h5>
+               <span><Reserve/></span>
 
                 <div className="slideGraphs">
 
                     <div className="graphlist">
                         
-                    <div className="graph">
-                    <h6>communication</h6>
-                    <span>
-                        <i>
-                           {/* slide Graph */}
-                        </i>
-                        rating
-                    </span>
-                    </div>
+                        <div className="graph">
+                        <h6>Cleanliness</h6>
+                        <span>
+                            <i>
+                            <Slider/>
+                            </i>
+                        </span>
+                        </div>
 
-                    <div className="graph">
-                    <h6>communication</h6>
-                    <span>
-                        <i>
-                           {/* slide Graph */}
-                        </i>
-                        rating
-                    </span>
-                    </div>
+                        <div className="graph">
+                        <h6>Communication</h6>
+                        <span>
+                            <i>
+                            <Slider/>
+                            </i>
+                        </span>
+                        </div>
 
-                    <div className="graph">
-                    <h6>communication</h6>
-                    <span>
-                        <i>
-                           {/* slide Graph */}
-                        </i>
-                        rating
-                    </span>
-                    </div>
+                        <div className="graph">
+                        <h6>Check-In</h6>
+                        <span>
+                            <i>
+                            <Slider/>
+                            </i>
+                        </span>
+                        </div>
 
-                  
+    
                     </div>
 
                     <div className="graphlist">
                         
                         <div className="graph">
-                        <h6>communication</h6>
+                        <h6>Accuracy</h6>
                         <span>
                             <i>
-                               {/* slide Graph */}
+                            <Slider/>
                             </i>
-                            rating
                         </span>
                         </div>
-    
+
                         <div className="graph">
-                        <h6>communication</h6>
+                        <h6>Location</h6>
                         <span>
                             <i>
-                               {/* slide Graph */}
+                            <Slider/>
                             </i>
-                            rating
                         </span>
                         </div>
-    
+
                         <div className="graph">
-                        <h6>communication</h6>
+                        <h6>Value</h6>
                         <span>
                             <i>
-                               {/* slide Graph */}
+                            <Slider/>
                             </i>
-                            rating
                         </span>
                         </div>
+
     
-                      
-                        </div>
+                    </div>
 
                 </div>
             
@@ -714,14 +725,17 @@ const Listing = () => {
                     <div className="comments">
 
                           <div className="user">
+
                               <div className="userPhoto">
-                                <img src="" alt="" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
                               </div>
 
                               <div className="userDetails">
                                 <h3>User Name</h3>
                                 <span>Date of Comment</span>
                               </div>
+
                           </div>
 
                           <div className="commentedText">
@@ -729,41 +743,49 @@ const Listing = () => {
                           </div>
                     </div>
 
-                    <div className="comments">
-                        
-                        <div className="user">
-                            <div className="userPhoto">
-                              <img src="" alt="" />
-                            </div>
+                     <div className="comments">
 
-                            <div className="userDetails">
-                              <h3>User Name</h3>
-                              <span>Date of Comment</span>
-                            </div>
-                        </div>
+                          <div className="user">
 
-                        <div className="commentedText">
-                          <p> This Here is an actual comment</p>
-                        </div>
-                   </div>
+                              <div className="userPhoto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
+                              </div>
 
-                   <div className="comments">
-                        
-                        <div className="user">
-                            <div className="userPhoto">
-                              <img src="" alt="" />
-                            </div>
+                              <div className="userDetails">
+                                <h3>User Name</h3>
+                                <span>Date of Comment</span>
+                              </div>
+                              
+                          </div>
 
-                            <div className="userDetails">
-                              <h3>User Name</h3>
-                              <span>Date of Comment</span>
-                            </div>
-                        </div>
+                          <div className="commentedText">
+                            <p> This Here is an actual comment</p>
+                          </div>
+                    </div>
 
-                        <div className="commentedText">
-                          <p> This Here is an actual comment</p>
-                        </div>
-                  </div>
+                      <div className="comments">
+
+                          <div className="user">
+
+                              <div className="userPhoto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
+                              </div>
+
+                              <div className="userDetails">
+                                <h3>User Name</h3>
+                                <span>Date of Comment</span>
+                              </div>
+                              
+                          </div>
+
+                          <div className="commentedText">
+                            <p> This Here is an actual comment</p>
+                          </div>
+                    </div>
+
+
 
                 </div>
 
@@ -772,14 +794,17 @@ const Listing = () => {
                     <div className="comments">
 
                           <div className="user">
+
                               <div className="userPhoto">
-                                <img src="" alt="" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
                               </div>
 
                               <div className="userDetails">
                                 <h3>User Name</h3>
                                 <span>Date of Comment</span>
                               </div>
+
                           </div>
 
                           <div className="commentedText">
@@ -787,41 +812,49 @@ const Listing = () => {
                           </div>
                     </div>
 
-                    <div className="comments">
-                        
-                        <div className="user">
-                            <div className="userPhoto">
-                              <img src="" alt="" />
-                            </div>
+                     <div className="comments">
 
-                            <div className="userDetails">
-                              <h3>User Name</h3>
-                              <span>Date of Comment</span>
-                            </div>
-                        </div>
+                          <div className="user">
 
-                        <div className="commentedText">
-                          <p> This Here is an actual comment</p>
-                        </div>
-                   </div>
+                              <div className="userPhoto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
+                              </div>
 
-                   <div className="comments">
-                        
-                        <div className="user">
-                            <div className="userPhoto">
-                              <img src="" alt="" />
-                            </div>
+                              <div className="userDetails">
+                                <h3>User Name</h3>
+                                <span>Date of Comment</span>
+                              </div>
+                              
+                          </div>
 
-                            <div className="userDetails">
-                              <h3>User Name</h3>
-                              <span>Date of Comment</span>
-                            </div>
-                        </div>
+                          <div className="commentedText">
+                            <p> This Here is an actual comment</p>
+                          </div>
+                    </div>
 
-                        <div className="commentedText">
-                          <p> This Here is an actual comment</p>
-                        </div>
-                  </div>
+                      <div className="comments">
+
+                          <div className="user">
+
+                              <div className="userPhoto">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOIiEXB1uOFlAQAp2JSlv7zCR4R29QFIg3w&s" 
+                                alt ="" />
+                              </div>
+
+                              <div className="userDetails">
+                                <h3>User Name</h3>
+                                <span>Date of Comment</span>
+                              </div>
+                              
+                          </div>
+
+                          <div className="commentedText">
+                            <p> This Here is an actual comment</p>
+                          </div>
+                    </div>
+
+
 
                 </div>
 
@@ -830,53 +863,56 @@ const Listing = () => {
              <div className="reviewButton">
                 <button>Show all 27 reviews</button>
              </div>
+
            <hr />
          </div>
 
-       <hr />
          <div className="hostDetails">
-            <h5>host Details here</h5>
+         <hr />
 
             <div className="profile">
 
-                          <div className="hostedByUser">
+                    <div className="hostedByUser">
                               <div className="userPhoto">
-                                <img src="" alt="" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxsG3Ac8-CCLG3PzEvZXAfVoQxmjHleJqjg&s" 
+                                alt="" />
                               </div>
 
                               <div className="userDetails">
                                 <h3>User Name</h3>
                                 <span>Date of Comment</span>
                               </div>
-                          </div>
+                    </div>
             </div>
 
             <div className="userTags">
+                 <HostedBy/>
 
-                <span>
+                {/* <span>
                     <i>
-                      {/* icon */}
+                     
                     </i>
                      12 Reviews 
                 </span>
 
                 <span>
                     <i>
-                      {/* icon */}
+                     
                     </i>
                      identity verified 
                 </span>
 
                 <span>
                     <i>
-                      {/* icon */}
+                    
                     </i>
                      Superhost 
-                </span>
+                </span> */}
 
             </div>
 
             <div className="userDescriptiveDetails">
+
                 <h4>Jenny Is a Superhost</h4>
                 <p>voluptate magna</p>
                 <p>Lorem, i elit. Ea temporibus dio unde commodi blanditiis 
@@ -889,31 +925,40 @@ const Listing = () => {
              </div>
 
              <div className="extraText">
-                <span>Lorem, ipsum dolor sit amet consectetur 
+              <div>
+              <Warning/>
+              </div>
+
+                <div>
+                <span className='text'>Lorem, ipsum dolor sit amet consectetur 
                     adipisicing elit. Iure maxime accusantium eaque, 
                     </span>
+                </div>
              </div>
+
+             <hr />
          </div>
 
-         <hr />
-
          <div className="thingsToKnow">
-            <h3>Things to Know</h3>
+            <h1>Things to Know</h1>  
+
             <div className="thingsToKnowInfo">
 
                 <div className="houseRules">
+                  <h3>House Rules</h3> 
 
                 <div className="offer">
                              
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                          <Clock/>
                                       </i>
                                   </span>
                               </div>
+
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Check-in: After 4:00 PM</h5>
                               </div>
                 </div>
 
@@ -922,67 +967,182 @@ const Listing = () => {
                              <div className="offerIcon">
                                   <span>
                                       <i>
-                                          {/* Offer icon */}
+                                          <Clock/>
                                       </i>
                                   </span>
                               </div>
+
                               <div className="offerName">
-                                  <h5>Wi-Fi</h5>
+                                  <h5>Checkout:  10:00 AM</h5>
                               </div>
                 </div>
 
+                <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                         <SmallSelfCheck/>
+                                      </i>
+                                  </span>
+                              </div>
+
+                              <div className="offerName">
+                                  <h5>Self check-in with lockbox</h5>
+                              </div>
+                </div>
+
+                <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                          <Cart/>
+                                      </i>
+                                  </span>
+                              </div>
+
+                              <div className="offerName">
+                                  <h5>Not suitable for infants (under 2 years)</h5>
+                              </div>
+                </div>
+
+                <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                         <NoSmoking/>
+                                      </i>
+                                  </span>
+                              </div>
+
+                              <div className="offerName">
+                                  <h5>No smoking</h5>
+                              </div>
+                </div>
+
+                <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                          <SmallPet/>
+                                      </i>
+                                  </span>
+                              </div>
+
+                              <div className="offerName">
+                                  <h5>No pets</h5>
+                              </div>
+                </div>
+
+                <div className="offer">
+                             
+                             <div className="offerIcon">
+                                  <span>
+                                      <i>
+                                          <Party/>
+                                      </i>
+                                  </span>
+                              </div>
+
+                              <div className="offerName">
+                                  <h5>No parties or events
+                                  </h5>
+                              </div>
+                </div>
+
+        
                 </div>
 
                 <div className="healthAndSafety">
+                    <h3>Health & Safety</h3>
 
-                <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
-                </div>
+                        <div className="offer">
+                                    
+                                    <div className="offerIcon">
+                                        <span>
+                                            <i>
+                                                <ThreeStars/>
+                                            </i>
+                                        </span>
+                                    </div>
 
-                <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
-                </div>
+                                    <div className="offerName">
+                                        <h5>Committed to Airbnb's enhanced cleaning process. Show more</h5>
+                                    </div>
+                        </div>
 
-                <a href="">Show more </a>
+                        <div className="offer">
+                                    
+                                    <div className="offerIcon">
+                                        <span>
+                                            <i>
+                                               <SprayCan/>
+                                            </i>
+                                        </span>
+                                    </div>
+
+                                    <div className="offerName">
+                                        <h5>Airbnb's social-distancing and other COVID-19-related guidelines ap</h5>
+                                    </div>
+                        </div>
+
+                        <div className="offer">
+                                    
+                                    <div className="offerIcon">
+                                        <span>
+                                            <i>
+                                                ,<AirCoolingSystem/>
+                                            </i>
+                                        </span>
+                                    </div>
+
+                                    <div className="offerName">
+                                        <h5>Carbon monoxide alarm</h5>
+                                    </div>
+                        </div>
+
+                        <div className="offer">
+                                    
+                                    <div className="offerIcon">
+                                        <span>
+                                            <i>
+                                                <SmokeAlarm/>
+                                            </i>
+                                        </span>
+                                    </div>
+
+                                    <div className="offerName">
+                                        <h5>Smoke alarm</h5>
+                                    </div>
+                        </div>
+
+                        <div className="offer">
+                                    
+                                    <div className="offerIcon">
+                                        <span>
+                                            <i>
+                                               <SecurityDeposite/>
+                                            </i>
+                                        </span>
+                                    </div>
+
+                                    <div className="offerName">
+                                        <h5>Security Deposit - if you damage the home, you may be charged up to $566</h5>
+                                    </div>
+                        </div>
+
+                    <a href="">Show more </a>
 
                 </div>
 
                 <div className="cancellation">
+                    <h3>Cancellation</h3>
 
-                <div className="offer">
-                             
-                             <div className="offerIcon">
-                                  <span>
-                                      <i>
-                                          {/* Offer icon */}
-                                      </i>
-                                  </span>
-                              </div>
-                              <div className="offerName">
-                                  <h5>Wi-Fi</h5>
-                              </div>
-                </div>
-
+                  <span>Free cancellation before Feb 14</span>
+   
                 <a href="">Show more </a>
 
                 </div>
@@ -992,7 +1152,7 @@ const Listing = () => {
 
          <div className="explore">
 
-            <h4>Explore Options here</h4>
+            <h4>Explore other options in France</h4>
 
            <div className="options">
 
@@ -1124,10 +1284,10 @@ const Listing = () => {
            </div>
 
            <div className="links">
-            <span>Airbnb .</span>
-            <span>Europe .</span>
-            <span>France .</span>
-            <span>Bordeaux .</span>
+            <span>Airbnb &#129170;</span>
+            <span>Europe &#129170;</span>
+            <span>France &#129170;</span>
+            <span>Bordeaux </span>
           </div>
 
          </div>
