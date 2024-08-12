@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
 
 
 const Home = () => {
@@ -8,9 +9,19 @@ const Home = () => {
 
        <div className="nav">
 
-        <div className="logo"></div>
-        <div className="navLinks"></div>
-        <div className="userProfile"></div>
+        <div className="logo">
+            <LogoWhite/>
+        </div>
+
+        <div className="navLinks">
+             <span>Places to Stay</span>
+             <span>Experiences</span>
+             <span>Online Experiences</span>
+        </div>
+
+        <div className="userProfile">
+            
+        </div>
 
        </div>
 
