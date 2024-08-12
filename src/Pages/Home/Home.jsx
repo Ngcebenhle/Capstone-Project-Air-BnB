@@ -3,6 +3,7 @@ import './Home.css'
 import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
 import Card from '../../Componets/Card/Card'
+import Footer from '../../Componets/Footer/Footer'
 
 
 const Home = () => {
@@ -202,7 +203,7 @@ const Home = () => {
            </div>
 
            <div className="footer">
-            {/* footer components here */}
+              <Footer/>
            </div>
        </div>
 
