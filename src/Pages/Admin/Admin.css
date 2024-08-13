@@ -6,15 +6,17 @@
 .main {
   width: 100%;
   max-height: 100%;
+  background-color: red;
 }
 .nav {
   width: 100%;
-  height: 110px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
   /* margin-bottom: 50px; */
+  background-color: green;
 }
 .logo {
   max-height: 70px;
@@ -24,6 +26,8 @@
   width: 100%;
   height: 100%;
 }
+
+
 /* Navigation Buttons */
 .navButtons {
   max-width: 100%;
@@ -41,12 +45,14 @@
   border-radius: 20px;
   background: transparent;
 }
+
+
 /* Admin Pages  */
 .adminPages {
   width: 100%;
   max-height: 770px;
   padding: 0px 40px;
-
+  background-color: aqua;
   position: relative;
   display: flex;
   overflow: scroll;
@@ -57,6 +63,7 @@
 .reservations {
   width: 100%;
   height: 100%;
+  background-color: lime;
 }
 .listings {
   /* make srollable */
