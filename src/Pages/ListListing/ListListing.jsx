@@ -1,6 +1,8 @@
 import React from 'react'
 import './ListListing.css'
 
+import {ReactComponent as LogoRed} from '../../Assest/Logo_Red.svg'
+ 
 const ListListing = () => {
   return (
     <div className='listListingPage'>
