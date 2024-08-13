@@ -1,6 +1,7 @@
 import React from 'react'
 import './ListSlistingNavSearch.css'
 
+
 const ListListingNavSearch = () => {
   return (
     <div className='ListListingNavSearch'>
@@ -14,7 +15,9 @@ const ListListingNavSearch = () => {
             <div className="guests tab">
                 <span>5 Guests</span>
             </div>
-            <div className="searchIcon"></div>
+            <div className="searchIcon">
+                {/* <SearchIcon/> */}
+            </div>
         </div>
     </div>
   )

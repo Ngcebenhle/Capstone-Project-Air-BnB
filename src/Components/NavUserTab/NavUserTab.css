@@ -5,16 +5,13 @@
 }
 .user{
     height:  50px;
-    width: 250px;
-
-    background-color: lime;
-    padding: 0px 10px;
-
+    width: 255px;
+    padding: 0px 5px;
     display: flex;
     align-items: center;
 }
 .userName{
-    width: 150px;
+    width: 170px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -33,16 +30,16 @@
     height: 40px;
     border-radius: 20px;
     position: relative;
-    background-color: green;
+    background-color: rgb(220, 230, 220);
 
     display: flex;
-   align-items: center;
+    align-items: center;
    justify-content: center;
    padding-top: 3px;
 }
 .menuIcon{
 width: 30px;
-margin-right: 7px;
+margin-right: 5px;
 }
 .userProfile{
     width: 30px;
