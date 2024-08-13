@@ -1,7 +1,7 @@
 import './App.css';
+
 import Reservations from './Components/MyReservations/Reservations';
 import Admin from './Pages/Admin/Admin';
-
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
 
      <Admin/>
      {/* <Reservations/> */}
+
 
     </div>
   );
