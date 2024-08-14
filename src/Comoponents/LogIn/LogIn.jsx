@@ -5,6 +5,7 @@ const LogIn = () => {
   return (
 
     <div className='loginContainer'>
+      
            <div className="form">
              <h2>Log In</h2>
 
