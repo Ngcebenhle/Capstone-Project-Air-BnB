@@ -1,5 +1,6 @@
 import React from 'react'
 import './LogInPage.css'
+import {ReactComponent as LogoRed} from '../../Assets/LogoRed.svg'
 
 const LogInPage = () => {
   return (
@@ -7,7 +8,7 @@ const LogInPage = () => {
 
        <div className="nav">
            <div className="logo">
-            <img src="" alt="" />
+           
            </div>
        </div>
 
