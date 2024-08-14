@@ -72,7 +72,7 @@ const Admin = () => {
                 </div>
 
                   <Reservations/>
-                  <Reservations/>
+                  
                 
                   
 
