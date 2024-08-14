@@ -1,22 +1,22 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .main {
-  width: 100%;
+ 
   max-height: 100%;
-  background-color: red;
 }
 .nav {
-  width: 100%;
+  width: 88%;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
   /* margin-bottom: 50px; */
-  background-color: green;
+  background-color: rgb(255, 255, 255);
 }
 .logo {
   max-height: 70px;
@@ -40,7 +40,7 @@
 }
 .navigation > button {
   width: 150px;
-  height: 40px;
+  height: 30px;
   margin-right: 40px;
   border-radius: 20px;
   background: transparent;
@@ -49,22 +49,28 @@
 
 /* Admin Pages  */
 .adminPages {
-  width: 100%;
+
   max-height: 770px;
   padding: 0px 40px;
-  background-color: aqua;
   position: relative;
-  display: flex;
+  /* display: flex; */
   overflow: scroll;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.reservations {
-  width: 100%;
+.reservationsList {
+  
   height: 100%;
-  background-color: lime;
 }
+.reservationsList > h2 {
+  margin-bottom: 20px;
+}
+/* .action, .checkOutDate, .checkInDate,
+.property, .bookedBy {
+  background-color: silver;
+} */
+
 .listings {
   /* make srollable */
   width: 100%;

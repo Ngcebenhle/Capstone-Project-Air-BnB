@@ -7,7 +7,7 @@
     height:  50px;
     width: 250px;
 
-    background-color: lime;
+   
     padding: 0px 10px;
 
     display: flex;
@@ -33,7 +33,7 @@
     height: 40px;
     border-radius: 20px;
     position: relative;
-    background-color: green;
+    background-color: rgb(234, 236, 234);
 
     display: flex;
    align-items: center;
