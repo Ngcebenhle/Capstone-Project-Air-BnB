@@ -1,5 +1,7 @@
 import React from 'react'
 import './HomeNacSearch.css'
+import 'react-datepicker/dist/react-datepicker.css'
+import DatePicker from "react-datepicker";
 
 const HomeNavSearch = () => {
   return (
@@ -12,12 +14,12 @@ const HomeNavSearch = () => {
 
          <div className="checkIn">
          <h4>Check In</h4>
-         <span>Add Date</span>
+         <span><DatePicker/></span>
          </div>
 
          <div className="checkOut">
          <h4>Check Out</h4>
-         <span>Add Date</span>
+         <span><DatePicker/></span>
          </div>
 
          <div className="guest">
