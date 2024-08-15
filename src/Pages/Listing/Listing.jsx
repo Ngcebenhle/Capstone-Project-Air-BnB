@@ -323,11 +323,12 @@ const Listing = () => {
                             <div className="datesAndGusts">
 
                                 <div className="chooseDates">
+                                    
                                     <div className="checkingInDate">
-                                        its me
+                                    <DatePicker/>
                                     </div>
                                     <div className="checkingOutDate">its 
-                                        me here
+                                    <DatePicker/>
                                     </div>
                                 </div>
 
@@ -645,7 +646,7 @@ const Listing = () => {
                 <div className="dates">
                     <h5>Calenders here</h5>
                    <div className='calenders'>
-                   {/* <DatePicker/> */}
+                  
                   <div className="cID">
                   <Calendar/>
                   </div>
