@@ -1,6 +1,13 @@
 import React from 'react'
 import './Listing.css'
+import 'react-calendar/dist/Calendar.css';
 import Footer from '../../Components/Footer/Footer.jsx';
+import Calendar from 'react-calendar';
+
+import 'react-datepicker/dist/react-datepicker.css'
+import DatePicker from "react-datepicker";
+
+
 import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
 import {ReactComponent as Logo} from '../../Assest/Logo_Red.svg'
 import {ReactComponent as Dot} from '../../Assest/Dot.svg'
@@ -637,8 +644,18 @@ const Listing = () => {
              
                 <div className="dates">
                     <h5>Calenders here</h5>
+                   <div className='calenders'>
+                   {/* <DatePicker/> */}
+                  <div className="cID">
+                  <Calendar/>
+                  </div>
 
-                    
+                  <div className="cOD">
+                 
+                  <Calendar/>
+                  </div>
+                   </div>
+                      
                 </div>
 
                </div>
