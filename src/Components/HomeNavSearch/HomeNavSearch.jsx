@@ -5,7 +5,8 @@ import DatePicker from "react-datepicker";
 
 const HomeNavSearch = () => {
   return (
-    <div className='homeNavSearch'>
+    <div>
+      <div className='homeNavSearch'>
 
          <div className="location">
             <h4>Location</h4>
@@ -28,6 +29,7 @@ const HomeNavSearch = () => {
          </div>
          
          <div className="searchIcon"></div>
+    </div>
     </div>
   )
 }

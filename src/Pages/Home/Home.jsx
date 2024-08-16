@@ -1,6 +1,9 @@
 import React from 'react'
 import './Home.css'
+// import 'react-datepicker/dist/react-datepicker.css'
+// import DatePicker from "react-datepicker";
 import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
+import HomeNavSearch from '../../Components/HomeNavSearch/HomeNavSearch'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
 import Card from '../../Componets/Card/Card'
 import Footer from '../../Componets/Footer/Footer'
@@ -33,7 +36,7 @@ const Home = () => {
 
        <div className="locationFilter">
             <div>
-                {/* Location filter and Date selector Components her */}
+                <HomeNavSearch/>
             </div>
        </div>
 

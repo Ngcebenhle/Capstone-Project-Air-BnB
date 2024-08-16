@@ -1,7 +1,8 @@
 *{
-    margin: 12px;
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+   
 }
 .homeNavSearch{
     /* max-width: 848px;
@@ -13,13 +14,18 @@
     display: flex;
     justify-content: space-around;
     background-color: limegreen;
+
+    margin-bottom: 12px;
+    padding: 15px;
 }
 
 .homeNavSearch > div {
    
     line-height: 2px;
     border-right: 1px solid gray;
- 
+    height: 40px;
+
+    /* margin: 50px 0px; */
 
 }
 
@@ -28,4 +34,8 @@
 }
 .checkIn, .checkOut{
     width: 20%;
+}
+.location{ 
+   
+    background-color: red;
 }
