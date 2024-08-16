@@ -1,9 +1,9 @@
 import React from 'react'
 import './Listing.css'
-import 'react-calendar/dist/Calendar.css';
+
 import Footer from '../../Components/Footer/Footer.jsx';
 import Calendar from 'react-calendar';
-
+import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
 
@@ -48,6 +48,7 @@ import {ReactComponent as SprayCan} from '../../Assest/Small_Spray_Can.svg'
 import {ReactComponent as AirCoolingSystem} from '../../Assest/Small_Air_Cooling.svg'
 import {ReactComponent as SmokeAlarm} from '../../Assest/Smoke_Alarm.svg'
 import {ReactComponent as SecurityDeposite} from '../../Assest/Security_Deposite.svg'
+import {ReactComponent as Search} from '../../Assest/Search_Icon_Red.svg'
 
 
 
@@ -65,7 +66,8 @@ const Listing = () => {
 
              <div className="search">
                 {/* Search input */}
-                <input type="text" name="" id="" />
+                {/* <input type="text" name="" id="" /> */}
+                <Search/>
                 <span>
                 <i>
                    {/* red round search icon */}
