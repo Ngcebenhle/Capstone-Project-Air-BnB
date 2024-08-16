@@ -2,7 +2,7 @@ import React from 'react'
 import './HomeNacSearch.css'
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
-import {ReactComponent as Search} from '../../Assest/Search_icon_2_Red.svg'
+import {ReactComponent as Search} from '../../Assets/Search_icon_2_Red.svg'
 
 const HomeNavSearch = () => {
   return (

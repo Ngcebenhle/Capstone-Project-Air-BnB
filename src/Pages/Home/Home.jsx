@@ -2,14 +2,23 @@ import React from 'react'
 import './Home.css'
 // import 'react-datepicker/dist/react-datepicker.css'
 // import DatePicker from "react-datepicker";
-import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
+import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import HomeNavSearch from '../../Components/HomeNavSearch/HomeNavSearch'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
-import Card from '../../Componets/Card/Card'
-import Footer from '../../Componets/Footer/Footer'
-import {ReactComponent as GiftCard} from '../../Assest/Gift_Card.svg'
-import {ReactComponent as ThingsToDoAtHome} from '../../Assest/Things_To_Do_At_Home.svg'
-import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assest/Things_To_Do_On_Your_Trip.svg'
+import Card from '../../Components/Card/Card'
+import Footer from '../../Components/Footer/Footer'
+import {ReactComponent as GiftCard} from '../../Assets/Gift_Card.svg'
+import {ReactComponent as ThingsToDoAtHome} from '../../Assets/Things_To_Do_At_Home.svg'
+import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assets/Things_To_Do_On_Your_Trip.svg'
+
+
+// cards
+import {ReactComponent as Card1} from '../../Assets/Cards/Card1.svg'
+import {ReactComponent as Card2} from '../../Assets/Cards/Card2.svg'
+import {ReactComponent as Card3} from '../../Assets/Cards/Card3.svg'
+import {ReactComponent as Card4} from '../../Assets/Cards/Card4.svg'
+
+
 
 
 const Home = () => {
@@ -59,11 +68,24 @@ const Home = () => {
            <div className="inspiration">
             <h2>Inspiration for your next trip</h2>
             <div className="inspirationCards">
+                
+                <div><Card1/></div>
+                <div><Card2/></div>
+                <div><Card3/></div>
+                <div><Card4/></div>
              
+
+                 {/* <Card/>
                  <Card/>
                  <Card/>
-                 <Card/>
-                 <Card/>
+                 <Card/> */}
+
+                 {/* <div className='card'>
+                    <img src="" alt="" />
+                    <div className="details">
+                        <h5>hello</h5>
+                    </div>
+                 </div> */}
 
             </div>
            </div>
