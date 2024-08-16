@@ -4,6 +4,9 @@ import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
 import Card from '../../Componets/Card/Card'
 import Footer from '../../Componets/Footer/Footer'
+import {ReactComponent as GiftCard} from '../../Assest/Gift_Card.svg'
+import {ReactComponent as ThingsToDoAtHome} from '../../Assest/Things_To_Do_At_Home.svg'
+import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assest/Things_To_Do_On_Your_Trip.svg'
 
 
 const Home = () => {
@@ -68,21 +71,23 @@ const Home = () => {
              <div className="banners">
 
                 <div className="photo1">
-                    <img src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-3133339-media_library/original/9b251ae4-3e47-48d3-b78d-080c5d9388fc.jpeg?im_w=720" 
+                    {/* <img src="https://a0.muscache.com/im/pictures/lombard/MtTemplate-3133339-media_library/original/9b251ae4-3e47-48d3-b78d-080c5d9388fc.jpeg?im_w=720" 
                     alt="" />
                     <div className="photo1Text">
                         <h1>Things to do on your trip</h1>
                         <button>Experiences</button>
-                    </div>
+                    </div> */}
+                      <ThingsToDoAtHome/>
                 </div>
 
                 <div className="photo2">
-                    <img src="https://i.insider.com/5ddd23e0695b58490a314289?width=750&format=jpeg&auto=webp" 
+                    {/* <img src="https://i.insider.com/5ddd23e0695b58490a314289?width=750&format=jpeg&auto=webp" 
                     alt="" />
                     <div className="photo2Text">
                         <h1>Things to do at home</h1>
                         <button>Online Experience</button>
-                    </div>
+                    </div> */}
+                    <ThingsToDoOnYourTrip/>
                 </div>
 
              </div>
@@ -99,8 +104,7 @@ const Home = () => {
             </div>
 
             <div className="shopImage">
-                <img src="https://ml5u6r2vr7de.i.optimole.com/cb:aeZg.3180f/w:1600/h:1025/q:mauto/f:avif/https://fantasticostudio.co/wp-content/uploads/2022/09/airbnb_laura_niubo_giftcards.png" 
-                alt="" />
+                <GiftCard/>
             </div>
 
             
