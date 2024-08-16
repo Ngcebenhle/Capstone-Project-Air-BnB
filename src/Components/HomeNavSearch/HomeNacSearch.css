@@ -1,0 +1,31 @@
+*{
+    margin: 12px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.homeNavSearch{
+    /* max-width: 848px;
+    max-height: 65px; */
+
+    width: 848px;
+    height: 65px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-around;
+    background-color: limegreen;
+}
+
+.homeNavSearch > div {
+   
+    line-height: 2px;
+    border-right: 1px solid gray;
+ 
+
+}
+
+.searchIcon{
+    width: 60px;
+}
+.checkIn, .checkOut{
+    width: 20%;
+}
