@@ -7,7 +7,8 @@ import { ReactComponent as World } from "../../Assest/352479_language_icon.svg";
 //import context here
 
 const NavUserTab = () => {
-  const isLoggedIn = useContext();
+  // const isLoggedIn = useContext();
+  const isLoggedIn = false;
   const navUserToggler = () => {
     // drop down buttons active
 
