@@ -56,6 +56,7 @@ import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
 
 const Listing = () => {
   return (
+    
     <div className='listingContainer'>
 
         <div className="nav">
