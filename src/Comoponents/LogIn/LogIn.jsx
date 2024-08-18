@@ -2,12 +2,15 @@ import React from 'react'
 import './LogIn.css'
 
 const LogIn = () => {
+  // Call  use context the log in function and pass the text inputs values
   return (
 
     <div className='loginContainer'>
            <div className="form">
              <h2>Log In</h2>
-
+             
+             {/* Get the text inputs values and pass 
+             them in the log In Function */}
              <div className="texteares">
 
                 <div className="username">
@@ -24,7 +27,7 @@ const LogIn = () => {
 
               <span><a href="">Forgot Password ?</a></span>
 
-              <button>Log In</button>
+              <button onClick={LogIn}>Log In</button>
            </div>
     </div>
     
