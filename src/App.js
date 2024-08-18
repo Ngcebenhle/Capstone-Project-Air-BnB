@@ -1,9 +1,12 @@
 import './App.css';
+import 'react-datepicker/dist/react-datepicker.css'
+import DatePicker from "react-datepicker";
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <Home/>
     </div>
   );
 }
