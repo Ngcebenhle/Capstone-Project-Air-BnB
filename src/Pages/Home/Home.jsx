@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useContext} from 'react'
 import './Home.css'
 // import 'react-datepicker/dist/react-datepicker.css'
 // import DatePicker from "react-datepicker";
@@ -11,6 +11,7 @@ import {ReactComponent as GiftCard} from '../../Assets/Gift_Card.svg'
 import {ReactComponent as ThingsToDoAtHome} from '../../Assets/Things_To_Do_At_Home.svg'
 import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assets/Things_To_Do_On_Your_Trip.svg'
 
+import LogInContext from '../../Context/LogInContext'
 
 // cards
 import {ReactComponent as Card1} from '../../Assets/Cards/Card1.svg'
@@ -22,6 +23,9 @@ import {ReactComponent as Card4} from '../../Assets/Cards/Card4.svg'
 
 
 const Home = () => {
+
+   
+    
   return (
     <div className='home'>
 

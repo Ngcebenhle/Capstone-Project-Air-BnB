@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useContext} from 'react'
 import './Listing.css'
 
 import Footer from '../../Components/Footer/Footer.jsx';
@@ -6,6 +6,8 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
+
+import LogInContext from '../../Context/LogInContext.js';
 
 
 import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
@@ -55,6 +57,24 @@ import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
 
 
 const Listing = () => {
+
+    const datesState = useContext(LogInContext)
+    const {setDates, dates, isLoggedIn} = datesState
+
+    const reserve =() =>{
+           if (isLoggedIn){
+                // Send Out alert to log in then
+                // Redirect to log in page 
+                // log in after logging in redirect ti the exxact 
+                // page/listing
+           }
+           else{
+             
+            // send token and dates and listing id to the backend
+            // send out an alert for notification
+
+           }
+    }
   return (
     
     <div className='listingContainer'>
@@ -343,7 +363,7 @@ const Listing = () => {
                             </div>
 
                             <div className="reserveButton">
-                                <button>Reserve</button>
+                                <button onClick={reserve}>Reserve</button>
                             </div>
 
                             <div className="randomText">
@@ -650,13 +670,13 @@ const Listing = () => {
                     <h5>Calenders here</h5>
                    <div className='calenders'>
                   
-                  <div className="cID">
-                  <Calendar/>
+                  <div className="cID">                              
+                  <Calendar selected={dates.checkInDate} onChange={(date) => setDates({checkInDate:date})}/>
                   </div>
 
                   <div className="cOD">
                  
-                  <Calendar/>
+                  <Calendar selected={dates.checkOutDate} onChange={(date) => setDates({checkOutDate:date})}/>
                   </div>
                    </div>
                       

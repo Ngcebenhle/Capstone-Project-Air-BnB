@@ -6,17 +6,17 @@ export const LoginContext = createContext();
 
 const LogInContext = (props) => {
   
-  const [isLoggedIn, setIsLoggedIn] = useState({
-    loggedIn:false,
-    token: null
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [token, setToken] = useState("");
+  const [user, setUser] = useState("");
+  const [dates, setDates] = useState({
+    checkInDate:"",
+    checkOutDate:""
   });
-  const [user, setUser] = useState({});
-  
-  const [dates, setDates] = useState({});
 
 
  
-//   Log In Function
+   //   Log In Function
   const  LogIn = (username ,password) => {
 
       // auth response if true set isLogged In true
@@ -31,20 +31,32 @@ const LogInContext = (props) => {
       //   }
       //   });
 
-      setIsLoggedIn(true)
-
-       // Access ID and User Name
-       setUser({username: '',UserId: '',type: ''})
+      // setToken(response.token)
+      // setUser(response.username)
+      setIsLoggedIn(true);  
    }
 
    //   Log Out Function
    const LogOut = () => {
-      setIsLoggedIn(false)
+
       // delete JWT from local storage
+      setIsLoggedIn(false);
+      setToken("");
+      setUser("");
+      
    }
 
   return (
-    <LoginContext.Provider value={{isLoggedIn,user,LogIn,LogOut}}>{props.children}</LoginContext.Provider>
+    <LoginContext.Provider value={{
+      isLoggedIn,
+      token,
+      user,
+      dates,
+      setDates,
+      LogIn,
+      LogOut}}>
+      {props.children}
+      </LoginContext.Provider>
   );
 };
 

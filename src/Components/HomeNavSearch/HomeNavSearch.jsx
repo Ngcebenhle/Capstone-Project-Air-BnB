@@ -1,10 +1,16 @@
-import React from 'react'
+import {React, useContext} from 'react'
 import './HomeNacSearch.css'
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
 import {ReactComponent as Search} from '../../Assets/Search_icon_2_Red.svg'
+import LogInContext
 
+from '../../Context/LogInContext';
 const HomeNavSearch = () => {
+
+  const datesState = useContext(LogInContext)
+  const {setDates, dates } = datesState
+
   return (
     <div>
       <div className='homeNavSearch'>
@@ -17,13 +23,13 @@ const HomeNavSearch = () => {
          <div className="checkIn">
          <h4 className='headingText'>Check In</h4>
          <span className='subText'>Add Date</span>
-         {/* <span><DatePicker/></span> */}
+         {/* <span><DatePicker selected={dates.checkInDate} onChange={(date) => setDates({checkInDate:date})}/></span> */}
          </div>
 
          <div className="checkOut">
          <h4 className='headingText'>Check Out</h4>
          <span className='subText'>Add Date</span>
-         {/* <span><DatePicker/></span> */}
+         {/* <span><DatePicker selected={dates.checkOutDate} onChange={(date) => setDates({checkOutDate:date})}/></span> */}
          </div>
 
          <div className="guest">
