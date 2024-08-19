@@ -3,6 +3,7 @@ import './Admin.css'
 import Reservations from '../../Components/MyReservations/Reservations'
 import {ReactComponent as LogoRed} from '../../Assest/Logo_Red.svg'
 import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
+import CreateListingForm from '../../Components/CreateListingForm/CreateListingForm'
 
 const Admin = () => {
   return (
@@ -79,10 +80,12 @@ const Admin = () => {
             </div>
 
             <div className="listings">
+              
               {/* Listing Componets here */}
             </div>
 
             <div className="createlisting">
+              <CreateListingForm/>
               {/* Create listing Componet Form here */}
             </div>
          </div>

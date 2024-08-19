@@ -46,14 +46,13 @@
   background: transparent;
 }
 
-
 /* Admin Pages  */
 .adminPages {
 
   max-height: 770px;
   padding: 0px 40px;
   position: relative;
-  /* display: flex; */
+  display: flex;
   overflow: scroll;
 
   -ms-overflow-style: none;
