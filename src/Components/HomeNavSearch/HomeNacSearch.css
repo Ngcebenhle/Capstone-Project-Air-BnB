@@ -67,3 +67,59 @@
 
 
 }
+.guest{
+    position: relative;
+}
+.guestAdder{
+    position: absolute;
+    top: 40px;
+    left: -12px;
+    z-index: 200;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.guestAdder > div {
+    margin: 15px 5px;
+}
+.adults, .children{
+  display: flex;
+}
+.adults > button {
+    width: 30px;
+    border-radius: 100%;
+}
+.children > button {
+    width: 30px;
+    border-radius: 100%;
+}
+.adults > p {
+    width: 30px;
+    margin: 0px 15px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.children > p {
+    width: 30px;
+    margin: 0px 15px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.children > span {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    
+}
+.adults > span {
+    width: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 import './Admin.css'
 import Reservations from '../../Components/MyReservations/Reservations'
-import {ReactComponent as LogoRed} from '../../Assest/Logo_Red.svg'
-import NavUserTab from '../../Componets/NavUserTab/NavUserTab'
+import {ReactComponent as LogoRed} from '../../Assets/Logo_Red.svg'
+import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import CreateListingForm from '../../Components/CreateListingForm/CreateListingForm'
 
 const Admin = () => {

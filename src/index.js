@@ -3,13 +3,17 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import LogInContext from "./Context/LogInContext";
+import { CreateListingState } from "./Reducer/CreateListing/CreateListingState";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <CreateListingState>
     <LogInContext>
       <App />
     </LogInContext>
+    </CreateListingState>
+   
   </React.StrictMode>
 );
 

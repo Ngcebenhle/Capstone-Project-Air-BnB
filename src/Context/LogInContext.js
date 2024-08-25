@@ -4,9 +4,10 @@ import { Airbnb } from "../Reducer/CreateListing/CreateListingReducer";
 
 export const LoginContext = createContext();
 
-const LogInContext = (props) => {
+ const LogInContext = (props) => {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [test, setTest] = useState('this is for context testing purpose')
   const [token, setToken] = useState("");
   const [user, setUser] = useState("");
   const [dates, setDates] = useState({
@@ -52,12 +53,14 @@ const LogInContext = (props) => {
       token,
       user,
       dates,
+      test, 
+      setTest,
       setDates,
       LogIn,
       LogOut}}>
-      {props.children}
-      </LoginContext.Provider>
+      {props.children}</LoginContext.Provider>
   );
 };
 
-export default LogInContext;
+export default LogInContext
+

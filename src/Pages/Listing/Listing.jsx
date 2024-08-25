@@ -6,9 +6,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
-
-import LogInContext from '../../Context/LogInContext.js';
-
+import LoginContext from '../../Context/LogInContext.js';
 
 import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
 import {ReactComponent as Logo} from '../../Assets/Logo_Red.svg'
@@ -26,7 +24,6 @@ import {ReactComponent as SelfCheck} from '../../Assets/Self_Check_In.svg'
 import {ReactComponent as Cancellation} from '../../Assets/Cancellation.svg'
 import {ReactComponent as Reserve} from '../../Assets/Reserve_Section_icons.svg'
 import {ReactComponent as Leaf} from '../../Assets/Leaf.svg'
-
 import {ReactComponent as Washer} from '../../Assets/Washer.svg'
 import {ReactComponent as Camera} from '../../Assets/Camera.svg'
 import {ReactComponent as Kitchen} from '../../Assets/Kitchine.svg'
@@ -58,9 +55,10 @@ import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
 
 const Listing = () => {
 
-    const datesState = useContext(LogInContext)
-    const {setDates, dates, isLoggedIn} = datesState
-
+    const setDates = useContext(LoginContext)
+    const dates = useContext(LoginContext)
+    const isLoggedIn = useContext(LoginContext)
+    
     const reserve =() =>{
            if (isLoggedIn){
                 // Send Out alert to log in then
@@ -86,12 +84,10 @@ const Listing = () => {
              </div>
 
              <div className="search">
-                {/* Search input */}
-                {/* <input type="text" name="" id="" /> */}
                 <Search/>
                 <span>
                 <i>
-                   {/* red round search icon */}
+                 
                  </i>
                 </span>
              </div>
@@ -671,12 +667,12 @@ const Listing = () => {
                    <div className='calenders'>
                   
                   <div className="cID">                              
-                  <Calendar selected={dates.checkInDate} onChange={(date) => setDates({checkInDate:date})}/>
+                  {/* <Calendar selected={dates.checkInDate} onChange={(date) => setDates({checkInDate:date})}/> */}
                   </div>
 
                   <div className="cOD">
                  
-                  <Calendar selected={dates.checkOutDate} onChange={(date) => setDates({checkOutDate:date})}/>
+                  {/* <Calendar selected={dates.checkOutDate} onChange={(date) => setDates({checkOutDate:date})}/> */}
                   </div>
                    </div>
                       

@@ -5,16 +5,14 @@ import { ReactComponent as UserProfile } from "../../Assets/9042880_profile_circ
 import { ReactComponent as Menu } from "../../Assets/5402398_list_menu_options_settings_checklist_icon.svg";
 import { ReactComponent as World } from "../../Assets/352479_language_icon.svg";
 
-import LogInContext from "../../Context/LogInContext";
+import LoginContext from "../../Context/LogInContext";
 //import context here
 
 
 const NavUserTab = () => {
 
-  const datesState = useContext(LogInContext)
-  const {setDates, dates, isLoggedIn} = datesState
+  const isLoggedIn = useContext(LoginContext)
   
- 
   const navUserToggler = () => {
     // drop down buttons active
 

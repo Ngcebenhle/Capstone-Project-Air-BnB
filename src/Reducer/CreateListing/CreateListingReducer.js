@@ -1,44 +1,29 @@
-export const CreateListing = (state, action) => {
+ const CreateListing = (state, action) => {
     switch (action.type) {
       
       case "CHANGE_INPUT":
         return {
           ...state,
-          basket: [...state.basket, action.payload]
+         [action.payload.name]:action.payload.value
         };
   
       case "LISTING_CREATED_SUCCESS":
         return {
           ...state,
-          basket: []
         };
 
       case "ADD_AMENITIES":
-        const index = state.basket.findIndex(
-          (basketItem) => basketItem.id === action.payload.id
-        );
-  
-        let newBasket = [...state.basket];
-  
-        if (index >= 0) {
-          newBasket.splice(index, 1);
-        } else {
-          console.warn(`cannot remove 
-                    (id: ${action.payload.id} 
-                      as it is 
-                      not in the basket)`);
-        }
-  
+      
         return {
           ...state,
-          basket: newBasket
+          amenities:[...state.amenities, action.payload]
         };
   
       case "REMOVE_AMENITIES":
 
         return {
           ...state,
-          user: action.payload
+          amenities: state.amenities.filter((ameni) => ameni !== action.payload)
         };
   
         case "ADD_IMAGES":
@@ -59,4 +44,7 @@ export const CreateListing = (state, action) => {
         return state;
     }
   };
-  
+
+  // ...state,
+  // quntity:state.quntity +1
+  export default CreateListing
