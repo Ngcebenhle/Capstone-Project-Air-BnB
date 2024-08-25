@@ -4,6 +4,7 @@ import {ReactComponent as UserProfile} from '../../Assets/9042880_profile_circle
 import {ReactComponent as Menu} from '../../Assets/5402398_list_menu_options_settings_checklist_icon.svg'
 import {ReactComponent as World} from '../../Assets/352479_language_icon.svg'
 
+
 const NavUserTab = () => {
   return (
     <div className='user'>
@@ -41,10 +42,12 @@ const NavUserTab = () => {
 
            </div>
         
-           {/* <div className="menuItems">
+
+           <div className="menuItems">
                  <button>Log In</button>
                  <button>Reservations</button>
-           </div> */}
+           </div>
+
 
         </div>
 
