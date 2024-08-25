@@ -2,7 +2,7 @@ import {React, useContext, useEffect, useState} from 'react'
 import './HomeNacSearch.css'
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
-import {ReactComponent as Search} from '../../Assets/Search_icon_2_Red.svg'
+import {ReactComponent as Search} from '../../Assets/Search.svg'
 import LoginContext from '../../Context/LogInContext'
 
 
@@ -16,12 +16,8 @@ const HomeNavSearch = () => {
 
    // Reading Locations from database
    const res = useEffect(() => {
-    //Runs on every render
-
-  //   const response = await instance({
-  //   method: "get",
-  //   url: "/payments/create?selectedLocation=" + location
-  // });
+    
+   
 
   });
 

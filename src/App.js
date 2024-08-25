@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Pages/Home/Home';
+import { Route, Router, BrowserRouter,Switch } from 'react-router-dom';
 
 function App() {
 
@@ -18,7 +19,38 @@ function App() {
 // const {test, setTest} = useContext(LoginContext)
   return (
     <div className="App">
-      <Home/>
+      <BrowserRouter>
+        <Switch>
+           
+           {/* Home Routes */}
+           <Route path='/' exact>
+             <Home/>
+           </Route>
+
+            <Route path='/home'>
+              <Home/>
+           </Route>
+
+
+           {/* Listing Routes  */}
+{/* 
+            <Route path=''>
+
+           </Route>
+
+            <Route path=''>
+
+           </Route>
+
+            <Route path=''>
+
+           </Route> */}
+
+
+        </Switch>
+      </BrowserRouter>
+      
+     
     </div>
 
   );

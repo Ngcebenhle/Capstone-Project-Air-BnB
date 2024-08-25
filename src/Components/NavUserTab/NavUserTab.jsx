@@ -1,9 +1,9 @@
 
 import { React, useContext, useState } from "react";
 import "./NavUserTab.css";
-import { ReactComponent as UserProfile } from "../../Assets/9042880_profile_circled_icon.svg";
-import { ReactComponent as Menu } from "../../Assets/5402398_list_menu_options_settings_checklist_icon.svg";
-import { ReactComponent as World } from "../../Assets/352479_language_icon.svg";
+import { ReactComponent as UserProfile } from "../../Assets/NavUser/User_Profile.svg";
+import { ReactComponent as Menu } from "../../Assets/NavUser/Menu.svg";
+import { ReactComponent as World } from "../../Assets/NavUser/World.svg";
 
 import LoginContext from "../../Context/LogInContext";
 //import context here

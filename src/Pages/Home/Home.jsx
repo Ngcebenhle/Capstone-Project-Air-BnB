@@ -5,8 +5,9 @@ import './Home.css'
 import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import HomeNavSearch from '../../Components/HomeNavSearch/HomeNavSearch'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
-import Card from '../../Components/Card/Card'
-import Footer from '../../Components/Footer/Footer'
+import { useHistory } from "react-router-dom"
+// import Card from '../../Components/Card/Card'
+// import Footer from '../../Components/Footer/Footer'
 import {ReactComponent as GiftCard} from '../../Assets/Gift_Card.svg'
 import {ReactComponent as ThingsToDoAtHome} from '../../Assets/Things_To_Do_At_Home.svg'
 import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assets/Things_To_Do_On_Your_Trip.svg'
@@ -23,15 +24,18 @@ import {ReactComponent as Card4} from '../../Assets/Cards/Card4.svg'
 
 
 const Home = () => {
-
    
+    const history = useHistory();
     
   return (
     <div className='home'>
 
        <div className="nav">
 
-            <div className="logo">
+            <div className="logo" onClick={() => {
+                // Redirect to Home Page
+                history.push("/");
+            }}>
                 <LogoWhite/>
             </div>
 
@@ -106,7 +110,7 @@ const Home = () => {
                         <h1>Things to do on your trip</h1>
                         <button>Experiences</button>
                     </div> */}
-                      <ThingsToDoAtHome/>
+                     <ThingsToDoOnYourTrip/>
                 </div>
 
                 <div className="photo2">
@@ -116,7 +120,8 @@ const Home = () => {
                         <h1>Things to do at home</h1>
                         <button>Online Experience</button>
                     </div> */}
-                    <ThingsToDoOnYourTrip/>
+                    
+                    <ThingsToDoAtHome/>
                 </div>
 
              </div>
@@ -236,7 +241,7 @@ const Home = () => {
            </div>
 
            <div className="footer">
-              <Footer/>
+              {/* <Footer/> */}
            </div>
        </div>
 
