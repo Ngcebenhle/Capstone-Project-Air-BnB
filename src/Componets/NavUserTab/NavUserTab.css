@@ -1,62 +1,57 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.user{
-    height:  50px;
-    width: 250px;
+.user {
+  height: 50px;
+  width: 250px;
+  padding: 0px 10px;
 
-   
-    padding: 0px 10px;
-
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.userName{
-    width: 150px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    
-    
+.userName {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .userName > span {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
-.languageIcon{
-    margin: 0px 10px;
-
+.languageIcon {
+  margin: 0px 10px;
 }
-.profileIcon{
-    width: 75px;
-    height: 40px;
-    border-radius: 20px;
-    position: relative;
-    background-color: rgb(234, 236, 234);
-
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   padding-top: 3px;
+.profileIcon {
+  width: 75px;
+  height: 40px;
+  border-radius: 20px;
+  position: relative;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
 }
-.menuIcon{
-width: 30px;
-margin-right: 7px;
+.menuIcon {
+  width: 30px;
+  margin-right: 7px;
 }
-.userProfile{
-    width: 30px;
+.userProfile {
+  width: 30px;
 }
-.menuItems{
-    max-width: 161px;
-    max-height: 41px;
-    position: absolute;
-    top: 45px;
-  
+.menuItems {
+  max-width: 161px;
+  max-height: 41px;
+  position: absolute;
+  top: 45px;
 }
 .menuItems > button {
-    width: 120px;
-    height: 30px;
+  width: 120px;
+  height: 30px;
 }
-    
-
+.LoggedInButtons > button {
+  width: 120px;
+  height: 30px;
+}
