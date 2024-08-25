@@ -16,15 +16,24 @@ const HomeNavSearch = () => {
 
    // Reading Locations from database
    const res = useEffect(() => {
-    
-   
+
 
   });
 
+  // Guest adder toggler function
   const guestToggler = () => {
     setAddGuestToggler(!addGuestToggler)
   }
   
+  // Search Button Function
+  const HandleSearchLocation = () => {
+     
+    // get selected location and send out an
+    // api request for all the locations on that 
+    // selected location.
+
+    // user context to set location here 
+  }
 
   return (
     <div>
@@ -71,7 +80,7 @@ const HomeNavSearch = () => {
 
          </div>
          
-         <div  className="searchIcon">
+         <div  className="searchIcon" onClick={HandleSearchLocation}>
           <Search/>
          </div>
     </div>

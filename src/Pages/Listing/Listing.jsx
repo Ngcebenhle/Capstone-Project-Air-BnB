@@ -1,4 +1,4 @@
-import {React, useContext} from 'react'
+import {React, useContext, useEffect, useState} from 'react'
 import './Listing.css'
 
 import Footer from '../../Components/Footer/Footer.jsx';
@@ -58,6 +58,23 @@ const Listing = () => {
     const setDates = useContext(LoginContext)
     const dates = useContext(LoginContext)
     const isLoggedIn = useContext(LoginContext)
+
+    const [listings, setListings] = useState(null)
+
+    const listOfListings = useEffect(() => {
+
+        // get the list of the listing of the selected location
+        // double check the link 
+        axios.get('http://localhost:8000/')
+        .then(function (response) {
+         setListings(response)
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+  },[selectedLocation]);
+
     
     const reserve =() =>{
            if (isLoggedIn){
@@ -73,6 +90,8 @@ const Listing = () => {
 
            }
     }
+
+
   return (
     
     <div className='listingContainer'>
