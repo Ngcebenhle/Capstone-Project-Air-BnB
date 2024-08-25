@@ -59,21 +59,6 @@ const Listing = () => {
     const dates = useContext(LoginContext)
     const isLoggedIn = useContext(LoginContext)
 
-    const [listings, setListings] = useState(null)
-
-    const listOfListings = useEffect(() => {
-
-        // get the list of the listing of the selected location
-        // double check the link 
-        axios.get('http://localhost:8000/')
-        .then(function (response) {
-         setListings(response)
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-
-  },[selectedLocation]);
 
     
     const reserve =() =>{

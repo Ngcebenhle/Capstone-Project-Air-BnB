@@ -1,18 +1,42 @@
-import React from 'react'
+import {React, useEffect, useState} from 'react'
 import './ListListing.css'
 import ListListingNavSearch from '../../Components/ListListingNavSearch/ListListingNavSearch'
 import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import {ReactComponent as LogoRed} from '../../Assets/Logo_Red.svg'
 import {ReactComponent as SearchIcon} from '../../Assets/Search.svg'
-import {ReactComponent as Filter} from '../../Assets/Small_Filter.svg'
+import {ReactComponent as Filter} from '../../Assets/Small_FIlter.svg'
+import axios from 'axios'
  
 const ListListing = () => {
+
+  const [listings, setListings] = useState(null)
+
+
+   // get the list of the listing of the selected location
+      // double check the link 
+
+//   const listOfListings = useEffect(() => {
+
+     
+
+      
+//       axios.get('http://localhost:8000/')
+//       .then(function (response) {
+//        setListings(response)
+//       })
+//       .catch(function (error) {
+//         console.log(error);
+//       });
+
+// },[selectedLocation]);
+
+
   return (
     <div className='listListingPage'>
 
-        <div className="nav">
+        <div className="listListingNav">
 
-            <div className="logo">
+            <div className="listListingLogo">
               <LogoRed/>
             </div>
 
@@ -21,7 +45,7 @@ const ListListing = () => {
                <SearchIcon/>
             </div>
 
-            <div className="NavUserProfile">
+            <div className="listListingNavUserProfile">
               <div>
               <NavUserTab/>
               </div>
@@ -66,6 +90,7 @@ const ListListing = () => {
 
         <div className="listings">
             {/* Listing Component */}
+
         </div>
     </div>
   )
