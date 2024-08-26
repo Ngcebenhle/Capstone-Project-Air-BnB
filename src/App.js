@@ -3,8 +3,8 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import { Route, Router, BrowserRouter,Switch } from 'react-router-dom';
 import ListListing from './Pages/ListListing/ListListing';
-
-
+import Listing from './Pages/Listing/Listing.jsx'
+import LogInPage from './Pages/LogIn/LogInPage.jsx'
 function App() {
 
 //   useEffect(() => {
@@ -19,7 +19,6 @@ function App() {
 //     console.log(error);
 //   });
 
-// const {test, setTest} = useContext(LoginContext)
   return (
     <div className="App">
 
@@ -29,24 +28,29 @@ function App() {
            {/* Home Routes */}
            <Route path='/' exact>
              <Home/>
+            
            </Route>
 
             <Route path='/home'>
-              <Home/>
+              {/* <Home/> */}
            </Route>
 
 
            {/* Listing Routes  */}
-{/* 
-            <Route path=''>
 
+            <Route path='/listListings'>
+              <ListListing/>
            </Route>
 
-            <Route path=''>
+            <Route path='listing:id'>
+                <Listing/>
+            </Route>
 
+           <Route path='logIn'>
+                <LogInPage/>
            </Route>
 
-            <Route path=''>
+            {/* <Route path=''>
 
            </Route> */}
 

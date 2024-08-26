@@ -32,7 +32,7 @@ const {LogIn} = useContext(LogInContext)
 
               <span><a href="">Forgot Password ?</a></span>
 
-              <button onClick={LogIn}>Log In</button>
+              <button className='logInButton' onClick={LogIn}>Log In</button>
            </div>
     </div>
     

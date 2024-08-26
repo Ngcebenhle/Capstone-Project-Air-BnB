@@ -8,9 +8,11 @@
 .user{
   height: 50px;
   width: 250px;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
   display: flex;
   align-items: center;
+  justify-content: end;
+  
 }
 
 .userName {
@@ -19,14 +21,15 @@
   display: flex;
   align-items: center;
   color: white;
+ 
 }
 
 .userName > span {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .languageIcon {
-  margin: 0px 10px;
+ 
   fill: white;
 }
 
@@ -46,7 +49,7 @@
 
 .menuIcon {
   width: 30px;
-  margin-right: 2px;
+  margin-right: 7px;
 }
 
 .userProfile {

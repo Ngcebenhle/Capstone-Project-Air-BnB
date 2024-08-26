@@ -11,7 +11,7 @@
 /* Nav styling */
 
 
-/* .nav {
+.listingNav {
   width: 100%;
   min-height: 60px;
   padding: 0px 95px;
@@ -21,18 +21,18 @@
   justify-content: space-evenly;
   
 }
-.nav > div {
+.listingNav > div {
     margin: 0px 10px;
 }
-.logo{
+.listingLogo{
     width: 500px;
    
 }
-.search {
+.listingSearch {
   display: flex;
   width: 400px;
 }
-.navUserProfile{
+.listingNavUserProfile{
     width: 250px;
     height: 40px;
   
@@ -40,7 +40,7 @@
     margin-left: 300px;
     display: flex;
     justify-content: end;
-} */
+}
 
 
 /* First Section Styling */
@@ -80,6 +80,7 @@
 /* Third Section Styling */
 .listingInfo{
     padding: 0px 95px;
+    
 }
 .Images{
     display: flex;
@@ -123,22 +124,25 @@
 
 /* Extensive Listing Details  */
 .ListingDetails{
-   
+    
 }
-.details{
+.detailsOfListing{
     
     padding-right: 50px;
     display: flex;
     justify-content: space-between;
     margin: 25px 0px;
+   
 }
 .info{
     max-width: 50%;
+   
 }
 .listingName{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+  
 }
 .name > h3 { 
     font-family: Inter;
@@ -156,6 +160,8 @@ line-height: 20px;
 text-align: left;
 
 }
+
+
 /* Host profile photo */
 .hostPhoto{
     position: relative;

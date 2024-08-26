@@ -11,7 +11,18 @@ const LocationSearchContext = (props) => {
     const [location, setLocation] = useState() // List of all available Location 
     const [selectedLocation, setSelectedLocation] = useState()
 
+      useEffect(() => {
+      //Runs on every render
+        
 
+      axios.get('http://localhost:8000/')
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    });
     
   return (
     <LocationSearch.Provider value={{

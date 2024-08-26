@@ -41,19 +41,21 @@
     padding-left: 5px;
     padding-right: 15px;
     width: 300px;
+    /* background-color: red; */
     
 }
 .location, .checkIn,
 .checkOut{
  margin-right: 10px;
 }
-.headingText{
+/* .headingText{
     
     font-family: Inter;
     font-size: 15px;
     font-weight: 600;
     line-height: 16px;
     text-align: left;
+
 
 }
 .subText {
@@ -66,18 +68,27 @@
     color: rgba(107, 114, 128, 1);
 
 
+} */
+
+select{
+    width: 150px;
+    border: none;
+    z-index: 200;
 }
+
 .guest{
     position: relative;
+    
 }
 .guestAdder{
     position: absolute;
-    top: 40px;
+    top: 45px;
     left: -12px;
     z-index: 200;
     width: 200px;
     background-color: rgb(255, 255, 255);
-    border-radius: 12px;
+    background-color: greenyellow;
+    /* border-radius: 7px; */
 }
 .guestAdder > div {
     margin: 15px 5px;
@@ -86,12 +97,14 @@
   display: flex;
 }
 .adults > button {
-    width: 30px;
-    border-radius: 100%;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
 }
 .children > button {
-    width: 30px;
-    border-radius: 100%;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
 }
 .adults > p {
     width: 30px;

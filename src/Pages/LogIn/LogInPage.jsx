@@ -6,10 +6,10 @@ import LogIn from '../../Components/LogIn/LogIn'
 
 const LogInPage = () => {
   return (
-    <div className='LogInpage'>
+    <div className='LogInPage'>
 
-       <div className="nav">
-           <div className="logo">
+       <div className="logInNav">
+           <div className="logInLogo">
               <LogoRed/>
            </div>
        </div>

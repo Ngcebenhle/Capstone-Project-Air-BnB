@@ -7,13 +7,9 @@ export const LoginContext = createContext();
  const LogInContext = (props) => {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [test, setTest] = useState('this is for context testing purpose')
   const [token, setToken] = useState("");
   const [user, setUser] = useState("");
-  const [dates, setDates] = useState({
-    checkInDate:"",
-    checkOutDate:""
-  });
+ 
 
 
  
@@ -52,10 +48,6 @@ export const LoginContext = createContext();
       isLoggedIn,
       token,
       user,
-      dates,
-      test, 
-      setTest,
-      setDates,
       LogIn,
       LogOut}}>
       {props.children}</LoginContext.Provider>

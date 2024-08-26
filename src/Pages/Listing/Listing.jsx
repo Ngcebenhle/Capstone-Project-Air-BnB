@@ -1,12 +1,14 @@
 import {React, useContext, useEffect, useState} from 'react'
 import './Listing.css'
 
-import Footer from '../../Components/Footer/Footer.jsx';
+// import Footer from '../../Components/Footer/Footer.jsx';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css'
 import DatePicker from "react-datepicker";
 import LoginContext from '../../Context/LogInContext.js';
+import ListListingNavSearch from '../../Components/ListListingNavSearch/ListListingNavSearch.jsx'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 import NavUserTab from '../../Components/NavUserTab/NavUserTab.jsx';
 import {ReactComponent as Logo} from '../../Assets/Logo_Red.svg'
@@ -47,7 +49,7 @@ import {ReactComponent as SprayCan} from '../../Assets/Small_Spray_Can.svg'
 import {ReactComponent as AirCoolingSystem} from '../../Assets/Small_Air_Cooling.svg'
 import {ReactComponent as SmokeAlarm} from '../../Assets/Smoke_Alarm.svg'
 import {ReactComponent as SecurityDeposite} from '../../Assets/Security_Deposite.svg'
-import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
+// import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
 
 
 
@@ -55,8 +57,8 @@ import {ReactComponent as Search} from '../../Assets/Search_Icon_Red.svg'
 
 const Listing = () => {
 
-    const setDates = useContext(LoginContext)
-    const dates = useContext(LoginContext)
+    const history = useHistory();
+
     const isLoggedIn = useContext(LoginContext)
 
 
@@ -67,12 +69,17 @@ const Listing = () => {
                 // Redirect to log in page 
                 // log in after logging in redirect ti the exxact 
                 // page/listing
+
+
+                //makeREservation method
            }
            else{
+             
              
             // send token and dates and listing id to the backend
             // send out an alert for notification
 
+            history.push("/logIn");
            }
     }
 
@@ -81,14 +88,15 @@ const Listing = () => {
     
     <div className='listingContainer'>
 
-        <div className="nav">
+        <div className="listingNav">
 
-             <div className="logo">
+             <div className="listingLogo">
                <Logo/>
              </div>
 
-             <div className="search">
-                <Search/>
+             <div className="listingSearch">
+                <ListListingNavSearch/>
+                {/* <Search/> */}
                 <span>
                 <i>
                  
@@ -96,7 +104,7 @@ const Listing = () => {
                 </span>
              </div>
              
-             <div className="navUserProfile">
+             <div className="listingNavUserProfile">
                 <NavUserTab/>
                 
              </div>
@@ -197,7 +205,7 @@ const Listing = () => {
 
               <div className="ListingDetails">
 
-                <div className="details">
+                <div className="detailsOfListing">
 
                     <div className="info">
 
@@ -1335,7 +1343,7 @@ const Listing = () => {
          </div>
 
          <div className="footer">
-           <Footer/>
+           {/* <Footer/> */}
          </div>
 
     </div>

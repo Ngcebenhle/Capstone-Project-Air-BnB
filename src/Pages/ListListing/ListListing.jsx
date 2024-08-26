@@ -6,20 +6,19 @@ import {ReactComponent as LogoRed} from '../../Assets/Logo_Red.svg'
 import {ReactComponent as SearchIcon} from '../../Assets/Search.svg'
 import {ReactComponent as Filter} from '../../Assets/Small_FIlter.svg'
 import axios from 'axios'
- 
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+
+
 const ListListing = () => {
 
   const [listings, setListings] = useState(null)
-
+  const history = useHistory();
 
    // get the list of the listing of the selected location
       // double check the link 
 
 //   const listOfListings = useEffect(() => {
 
-     
-
-      
 //       axios.get('http://localhost:8000/')
 //       .then(function (response) {
 //        setListings(response)
@@ -36,7 +35,9 @@ const ListListing = () => {
 
         <div className="listListingNav">
 
-            <div className="listListingLogo">
+            <div className="listListingLogo" onClick={() => {
+                   history.push("/");
+            }}>
               <LogoRed/>
             </div>
 
@@ -52,13 +53,14 @@ const ListListing = () => {
             </div>
 
         </div>
-        <p>Lorem ipsum dolor sit</p>
+        <p className='NoListings'>Lorem ipsum dolor sit</p>
 
        <div className='filterRow'>
        <div className="filters">
          
          <div className="filterList">
-          <div>
+
+          <div className='filterOptions'>
           <button> Price</button>
          {/* <button>Type Of Place</button> */}
          <button>Free Cancellation</button>
@@ -88,7 +90,7 @@ const ListListing = () => {
        </div>
 
 
-        <div className="listings">
+        <div className="listListingPageListings">
             {/* Listing Component */}
 
         </div>

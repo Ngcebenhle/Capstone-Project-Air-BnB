@@ -6,7 +6,7 @@ const ListListingNavSearch = () => {
   return (
     <div className='ListListingNavSearch'>
         <div className="tabs">
-            <div className="location tab">
+            <div className="listListingLocation tab">
                 <span>Cape Town</span>
             </div>
             <div className="dates tab">
