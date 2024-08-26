@@ -7,7 +7,7 @@ import {ReactComponent as SearchIcon} from '../../Assets/Search.svg'
 import {ReactComponent as Filter} from '../../Assets/Small_FIlter.svg'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-
+import ListingCard from '../../Components/ListingCard/ListingCard'
 
 const ListListing = () => {
 
@@ -92,7 +92,7 @@ const ListListing = () => {
 
         <div className="listListingPageListings">
             {/* Listing Component */}
-
+             <ListingCard/>
         </div>
     </div>
   )

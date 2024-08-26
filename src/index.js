@@ -1,17 +1,10 @@
-<<<<<<< HEAD
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import LogInContext from "./Context/LogInContext";
 import { CreateListingState } from "./Reducer/CreateListing/CreateListingState";
-=======
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-
->>>>>>> Listing-Card
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
