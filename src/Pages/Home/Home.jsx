@@ -5,7 +5,7 @@ import './Home.css'
 import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import HomeNavSearch from '../../Components/HomeNavSearch/HomeNavSearch'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
-import { useHistory } from "react-router-dom"
+import { useHistory, NavLink } from "react-router-dom"
 // import Card from '../../Components/Card/Card'
 import Footer from '../../Components/Footer/Footer'
 import {ReactComponent as GiftCard} from '../../Assets/Gift_Card.svg'
@@ -159,12 +159,17 @@ const Home = () => {
                 <h2>Inspiration for future getaways</h2>
 
                 <div className="links">
-                    <span>Destinations for arts & culture</span>
-                    <span>Destinations for outdoor adventure</span>
-                    <span>Mountain cabins</span>
-                    <span>Beach destinations</span>
-                    <span>Popular destinations</span>
-                    <span>Unique Stays</span>
+                    
+                    <section className='section1'><NavLink  to='#section1'>Destinations for outdoor adventure</NavLink></section>
+                    <section className='section3'><NavLink  to='#section3'>Mountain cabins</NavLink></section>
+                    <section className='section4'><NavLink  to='#section4'>Popular destinations</NavLink></section>
+                    <section className='section5'> <NavLink  to='#section5'>Unique Stays</NavLink></section>
+                    
+                    
+
+                    <NavLink  to='#'>Mountain cabins</NavLink>
+                    
+                   
                 </div>
 
                 <div className="suggestions">

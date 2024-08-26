@@ -5,6 +5,8 @@ import { Route, Router, BrowserRouter,Switch } from 'react-router-dom';
 import ListListing from './Pages/ListListing/ListListing';
 import Listing from './Pages/Listing/Listing.jsx'
 import LogInPage from './Pages/LogIn/LogInPage.jsx'
+import Admin from './Pages/Admin/Admin.jsx'
+import NotFound from './Pages/NotFound.jsx';
 function App() {
 
 //   useEffect(() => {
@@ -46,13 +48,20 @@ function App() {
                 <Listing/>
             </Route>
 
+            {/* LogIn Routes  */}
            <Route path='logIn'>
                 <LogInPage/>
            </Route>
 
-            {/* <Route path=''>
+            {/* Admin Routes  */}
+            <Route path='/admin'>
+                <Admin/>
+           </Route>
 
-           </Route> */}
+             {/* Page Not Found Routes  */}
+            <Route path='*'>
+            <NotFound/>
+           </Route>
 
 
         </Switch>

@@ -1,14 +1,18 @@
 import {React, useRef, useContext }from 'react'
 import './LogIn.css'
-import LogInContext from '../../Context/LogInContext';
+import LoginContext from '../../Context/LogInContext';
 
 
 const LogIn = () => {
 
 const {username, password} = useRef();
-const {LogIn} = useContext(LogInContext)
+// const {LogIn} = useContext(LoginContext)
 
-          LogIn(username.current.value, password.current.value)
+ // LogIn(username.current.value, password.current.value)
+
+ const submitLogIn = () => {
+
+ }
   return (
 
     <div className='loginContainer'>
@@ -32,7 +36,7 @@ const {LogIn} = useContext(LogInContext)
 
               <span><a href="">Forgot Password ?</a></span>
 
-              <button className='logInButton' onClick={LogIn}>Log In</button>
+              <button className='logInButton' onClick={submitLogIn}>Log In</button>
            </div>
     </div>
     

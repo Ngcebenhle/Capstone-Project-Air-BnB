@@ -13,9 +13,9 @@ const Admin = () => {
     <div>
         <div className="main">
 
-         <div className="nav">
+         <div className="adminNav">
 
-            <div className="logo">
+            <div className="adminLogo">
               
                 <LogoRed/>
             </div>
@@ -26,7 +26,7 @@ const Admin = () => {
 
          </div>
           
-          <div className="navButtons">
+          <div className="adminNavButtons">
 
             <div className="navigation">
                  <button>

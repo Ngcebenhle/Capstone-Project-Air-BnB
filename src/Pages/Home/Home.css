@@ -356,8 +356,9 @@ img{
 }
 .links{
     margin-bottom: 20px;
+    display: flex;
 }
-.links > span{
+.links > section{
    margin-right: 12px;
   
     font-family: Inter;
@@ -368,7 +369,7 @@ img{
    
 
 }
-.links > span:hover{
+.links > section:hover{
   color: rgba(107, 114, 128, 1);
 
 }
@@ -403,6 +404,13 @@ img{
 .suggestions > div {
     width: 25%;
     margin: 10px 0px;
+}
+.active{
+    /* text-decoration: underline;
+    text-decoration-color: rgb(233, 167, 25); */
+
+    text-decoration: underline solid rgb(233, 167, 25) 7px;
+   
 }
 ::-webkit-scrollbar {
     display: none;
