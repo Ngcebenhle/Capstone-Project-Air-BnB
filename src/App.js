@@ -1,4 +1,5 @@
 import './App.css';
+import ListingCard from './Componets/ListingCard/ListingCard';
 
 import Home from './Pages/Home/Home';
 import { Route, Router, BrowserRouter,Switch } from 'react-router-dom';
@@ -68,6 +69,7 @@ function App() {
       </BrowserRouter>
       
      
+
 
     </div>
 
