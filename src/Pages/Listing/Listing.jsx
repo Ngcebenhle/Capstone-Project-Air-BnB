@@ -1,7 +1,7 @@
 import {React, useContext, useEffect, useState} from 'react'
 import './Listing.css'
 
-// import Footer from '../../Components/Footer/Footer.jsx';
+import Footer from '../../Components/Footer/Footer.jsx';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css'
@@ -1342,9 +1342,9 @@ const Listing = () => {
 
          </div>
 
-         <div className="footer">
-           {/* <Footer/> */}
-         </div>
+        
+           <Footer/>
+       
 
     </div>
   )

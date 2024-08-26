@@ -73,7 +73,7 @@
 select{
     width: 150px;
     border: none;
-    z-index: 200;
+    z-index: 500;
 }
 
 .guest{
@@ -136,3 +136,7 @@ select{
     align-items: center;
     margin-left: 5px;
 }
+.react-datepicker-popper {
+    width: 100px;
+    height: 20px;
+  }

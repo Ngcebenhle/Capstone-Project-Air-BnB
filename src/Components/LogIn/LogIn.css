@@ -43,10 +43,15 @@ div h5{
     text-align: left;
     
 }
-div input{
+.username > input{
     width: 350px;
     height: 40px;
     border-radius: 5px;
+}
+.password > input{
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
 }
 .logInButton{
     width: 200px;

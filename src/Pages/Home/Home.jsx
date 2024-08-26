@@ -7,7 +7,7 @@ import HomeNavSearch from '../../Components/HomeNavSearch/HomeNavSearch'
 import {ReactComponent as LogoWhite} from '../../Assets/Logo_White.svg'
 import { useHistory } from "react-router-dom"
 // import Card from '../../Components/Card/Card'
-// import Footer from '../../Components/Footer/Footer'
+import Footer from '../../Components/Footer/Footer'
 import {ReactComponent as GiftCard} from '../../Assets/Gift_Card.svg'
 import {ReactComponent as ThingsToDoAtHome} from '../../Assets/Things_To_Do_At_Home.svg'
 import {ReactComponent as ThingsToDoOnYourTrip} from '../../Assets/Things_To_Do_On_Your_Trip.svg'
@@ -240,9 +240,8 @@ const Home = () => {
 
            </div>
 
-           <div className="footer">
-              {/* <Footer/> */}
-           </div>
+           
+             <Footer/>
        </div>
 
     </div>

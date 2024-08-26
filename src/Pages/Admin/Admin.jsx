@@ -4,6 +4,9 @@ import Reservations from '../../Components/MyReservations/Reservations'
 import {ReactComponent as LogoRed} from '../../Assets/Logo_Red.svg'
 import NavUserTab from '../../Components/NavUserTab/NavUserTab'
 import CreateListingForm from '../../Components/CreateListingForm/CreateListingForm'
+import Footer from '../../Components/Footer/Footer'
+
+
 
 const Admin = () => {
   return (
@@ -91,9 +94,11 @@ const Admin = () => {
          </div>
 
           
-      
+          <Footer/>
       
         </div>
+
+
     </div>
   )
 }
